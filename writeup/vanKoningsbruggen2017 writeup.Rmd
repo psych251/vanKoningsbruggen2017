@@ -1,0 +1,107 @@
+---
+title: "Replication of 'Spontaneous Hedonic Reactions to Social Media Cues' by van Koningsbruggen, Eden, & Veling  (2017, Cyberpsychology, Behavior, & Social Networking)"
+author: "Angela Lee (angela8@stanford.edu)"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:
+    toc: yes
+    toc_depth: 3
+    toc_float:
+      collapsed: false
+---
+
+<!-- Replication reports should all use this template to standardize reporting across projects.  These reports will be public supplementary materials that accompany the summary report(s) of the aggregate results. -->
+
+##Introduction
+
+## Project Proposal 
+
+Justification: My current research program focuses on how beliefs and responses to social technologies such as social media are related to health and psychological well-being. Up until now, my work has focused on understanding the mindsets that people have about social media, such as whether they believe it is an enhancing and beneficial tool they can utilize effectively or whether they believe it is a harmful and influential addiction. Currently, I'm very interested in understanding how social media use interacts with emotional responses. I selected Study 2 from van Koningsbruggen et al. (2017) because it examines the emotional associations that frequent vs. infrequent Facebook users have about social media through an online paradigm that captures spontaneous affective responses. More specifically, the particular result I am interested is their mediation finding a significant indirect effect of Facebook use (frequency) on Facebook cravings by hedonic reactions to Facebook (vs. control) cues. As the next step in my own research program, I'm hoping to examine how people with different mindsets of social media use respond emotionally to social media cues. I believe that replicating this study will help me better develop the skills necessary to program such an online paradigm and advance my understanding of hedonic reactions to social media cues. 
+
+Description: Study 2 recruited 170 participants from Amazon mTURK, who were paid $1 each for their time (128 in final analysis). Participants were required to have a 95% mTURK approval rating. Exclusion criteria were: (1) Participants must be Facebook users, (2) not be familiar with the Chinese or Japanese language (characters are used in the paradigm), and (3) sufficient engagement with the task (i.e., not 'straightlining' their AMP paradigm responses). 
+
+Participants were told they were going to complete a task "examining how people make judgements under distracting conditions." They were randomly assigned to seeing social media cues as primes (i.e., Facebook Logo, screenshot of timeline) or a control condition showing them photos of office supplies. This task was the "Affect Misattribution Procedure", an implicit measure of affective reactions. There are 60 trials (w/ 10 practice trials) of the AMP procedure, where participants (1) see a prime picture (social media cue or office supply) for 75 ms, (2) see a blank screen for 125 ms, (3) see a Chinese 'pictograph' character for 100 ms, and a (4) mask image. Participants respond whether each prime is more or less pleasant than the 'pictograph' character. The dependent variable of hedonic reaction consists of participants' average ratings of pleasantness of social media-related cues. Participants were also asked to complete a six-item measure of Facebook cravings (i.e., "I want to use Facebook right now."). 
+
+Potential challenges I anticipate with this study revolve around programming and questions of stimuli validity. Although I want to use this project as a learning opportunity on how to code online paradigms and use implicit measures paradigms, I have not done this before and anticipate possible programming challenges. In addition, I have some questions about the stimuli. They are available via supplemental materials provided by the original team, but I worry that the social-media cues (i.e., screenshot of Facebook timeline) may now be outdated and may influence participants' responses. Finally, I have some concerns that the use of Chinese 'pictograph' characters in the original AMP paradigm will result in a systematic exclusion of Asian or Asian American participants. I am not sure of the best way to proceed with this. 
+
+
+[No abstract is needed.]  Each replication project will have a straightforward, no frills report of the study and results.  These reports will be publicly available as supplementary material for the aggregate report(s) of the project as a whole.  Also, to maximize project integrity, the intro and methods will be written and critiqued in advance of data collection.  Introductions can be just 1-2 paragraphs clarifying the main idea of the original study, the target finding for replication, and any other essential information.  It will NOT have a literature review -- that is in the original publication. You can write both the introduction and the methods in past tense.  
+
+
+##Methods
+
+###Power Analysis
+
+Original effect size, power analysis for samples to achieve 80%, 90%, 95% power to detect that effect size.  Considerations of feasibility for selecting planned sample size.
+
+###Planned Sample
+
+Planned sample size and/or termination rule, sampling frame, known demographics if any, preselection rules if any.
+
+###Materials
+
+All materials - can quote directly from original article - just put the text in quotations and note that this was followed precisely.  Or, quote directly and just point out exceptions to what was described in the original article.
+
+###Procedure	
+
+Can quote directly from original article - just put the text in quotations and note that this was followed precisely.  Or, quote directly and just point out exceptions to what was described in the original article.
+
+###Analysis Plan
+
+Can also quote directly, though it is less often spelled out effectively for an analysis strategy section.  The key is to report an analysis strategy that is as close to the original - data cleaning rules, data exclusion rules, covariates, etc. - as possible.  
+
+**Clarify key analysis of interest here**  You can also pre-specify additional analyses you plan to do.
+
+###Differences from Original Study
+
+Explicitly describe known differences in sample, setting, procedure, and analysis plan from original study.  The goal, of course, is to minimize those differences, but differences will inevitably occur.  Also, note whether such differences are anticipated to make a difference based on claims in the original article or subsequent published research on the conditions for obtaining the effect.
+
+### Methods Addendum (Post Data Collection)
+
+You can comment this section out prior to final report with data collection.
+
+#### Actual Sample
+  Sample size, demographics, data exclusions based on rules spelled out in analysis plan
+
+#### Differences from pre-data collection methods plan
+  Any differences from what was described as the original plan, or “none”.
+
+
+##Results
+
+
+### Data preparation
+
+Data preparation following the analysis plan.
+	
+```{r include=F}
+###Data Preparation
+
+####Load Relevant Libraries and Functions
+
+####Import data
+
+#### Data exclusion / filtering
+
+#### Prepare data for analysis - create columns etc.
+```
+
+### Confirmatory analysis
+
+The analyses as specified in the analysis plan.  
+
+*Side-by-side graph with original graph is ideal here*
+
+###Exploratory analyses
+
+Any follow-up analyses desired (not required).  
+
+## Discussion
+
+### Summary of Replication Attempt
+
+Open the discussion section with a paragraph summarizing the primary result from the confirmatory analysis and the assessment of whether it replicated, partially replicated, or failed to replicate the original result.  
+
+### Commentary
+
+Add open-ended commentary (if any) reflecting (a) insights from follow-up exploratory analysis, (b) assessment of the meaning of the replication (or not) - e.g., for a failure to replicate, are the differences between original and present study ones that definitely, plausibly, or are unlikely to have been moderators of the result, and (c) discussion of any objections or challenges raised by the current and original authors about the replication attempt.  None of these need to be long.
