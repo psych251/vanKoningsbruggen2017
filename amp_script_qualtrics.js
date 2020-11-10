@@ -47,7 +47,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 		},
 
 		base_url : {//Where are your images at?
-			image : 'https://psych251.github.io/vanKoningsbruggen2017/inquisit_stimuli_newimagesonly'
+			image : 'https://psych251.github.io/vanKoningsbruggen2017/inquisit_stimuli_imagesonly'
 		}, 
 		
 		//Changing params to make task the same as original paper
