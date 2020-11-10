@@ -55,7 +55,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 		
 		//(Changed trial # in block & example to match vanKoningsbruggen2017)
 		trialsInBlock : [60], //Changed number of trials to 1 block of 60
-		trialsInExample : [10], //Change to 10 for example practice block 
+		trialsInExample : [3], //Change to 3 for example practice block 
 
 		//Duration parameters (updated from MinnoJS script to match vanKoningsbruggen2017)
 		fixationDuration : -1, //It means that by default we do not use fixation.
