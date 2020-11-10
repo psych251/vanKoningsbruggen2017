@@ -1,0 +1,507 @@
+﻿***********************************************************************
+						AFFECT MISATTRIBUTION PROCEDURE (AMP)
+***********************************************************************
+
+***********************************************************************
+											SCRIPT INFO
+
+updated for Inquisit 4.0 by K. Borchert (katjab@millisecond.com) for Millisecond Software LLC
+
+last changed: 08-14-2012
+***********************************************************************
+										BACKGROUND INFO
+***********************************************************************
+A script that implements the AMP measuring implicit attitudes towards flowers and insects. 
+The script is designed to be easily adaptable to other target categories. 
+
+
+
+***********************************************************************
+											DEFAULTS
+***********************************************************************
+requires Inquisit 4.0.0.0 or higher
+
+<defaults>
+/ fontstyle = ("Arial", 3.5%)
+/ screencolor = black
+/ txbgcolor = black
+/ txcolor = white
+/ minimumversion = "4.0.0.0"
+/canvasaspectratio = (4, 3)
+</defaults>
+***********************************************************************
+											VALUES
+***********************************************************************
+***********************************************************************
+Scoring
+***********************************************************************
+
+************
+editable parameters
+************
+
+
+************
+other parameters
+************
+<values>
+</values>
+
+***********************************************************************
+											EXPRESSIONS
+***********************************************************************
+<expressions>
+/ a = trial.primeA.percentcorrect
+/ b = trial.primeB.percentcorrect
+/ c = trial.primeC.percentcorrect
+/ d = trial.primeNeutral.percentcorrect
+</expressions>
+***********************************************************************
+											DATA
+***********************************************************************
+***********************************************************************
+Data Columns
+***********************************************************************
+******************
+Raw Data Files
+******************
+
+*******************
+Summary Data File
+*******************
+<summarydata >
+/file = "AMPstandaard_summary.iqdat"
+/columns = [script.filename, script.startdate, script.starttime, script.subjectid, 
+			trial.primeA.totalcorrectcount, trial.primeB.totalcorrectcount, trial.primeC.totalcorrectcount, trial.primeNeutral.totalcorrectcount, 	
+			trial.primeA.totalpercentcorrect, trial.primeB.totalpercentcorrect, trial.primeC.totalpercentcorrect, trial.primeNeutral.totalpercentcorrect, 
+			trial.primeA.totalmeanlatency, trial.primeB.totalmeanlatency, trial.primeC.totalmeanlatency, trial.primeNeutral.totalmeanlatency
+			trial.primeA.totalsdlatency, trial.primeB.totalsdlatency, trial.primeC.totalsdlatency, trial.primeNeutral.totalsdlatency
+			trial.primeA.totalmedianlatency, trial.primeB.totalmedianlatency, trial.primeC.totalmedianlatency, trial.primeNeutral.totalmedianlatency, 
+			trial.primeA.totalminlatency, trial.primeB.totalminlatency, trial.primeC.totalminlatency, trial.primeNeutral.totalminlatency, 
+			trial.primeA.totalmaxlatency, trial.primeB.totalmaxlatency, trial.primeC.totalmaxlatency, trial.primeNeutral.totalmaxlatency
+			trial.primeA.totalsumlatency, trial.primeB.totalsumlatency, trial.primeC.totalsumlatency, trial.primeNeutral.totalsumlatency]
+</summarydata>
+
+
+
+***********************************************************************
+											INSTRUCTIONS
+***********************************************************************
+***********************************************************************
+Task instruction stimuli
+***********************************************************************
+
+
+<list instructionspractice>
+/ items = (1, 2, 3, 4, 5, 6, 7)
+/ resetinterval = 20
+/ selectionmode = sequence
+</list>
+
+<trial instructionspractice>
+/ stimulustimes = [1=instructionspractice, spacebar]
+/ correctresponse = (" ")
+/ errormessage = false
+/ recorddata = false
+</trial>
+
+<text instructionspractice>
+/ items = instructionspractice
+/ hjustify = left
+/ size = (90%, 60%)
+/ position = (50%, 85%)
+/ valign = bottom
+/ select = sequence
+</text>
+
+<list instructionstest>
+/ items = (1, 2, 3, 4, 5, 6, 7)
+/ resetinterval = 20
+/ selectionmode = sequence
+</list>
+
+<trial instructionstest>
+/ stimulustimes = [1=instructionstest, spacebar]
+/ correctresponse = (" ")
+/ errormessage = false
+/ recorddata = false
+</trial>
+
+<text instructionstest>
+/ items = instructionstest
+/ hjustify = left
+/ size = (90%, 60%)
+/ position = (50%, 85%)
+/ valign = bottom
+/ select = sequence
+</text>
+
+
+<item instructionspractice>
+/ 1 = "In the following task, we would like you to work on a computer task.
+ 
+This task examines how people make simple judgments under distracting conditions. You will see pairs of pictures flashed one after the other on the computer screen. The first is a real-life photo. Do nothing in response to the real-life images. This photo signals the second picture is about to appear. 
+
+Please press the SPACEBAR to continue"
+/ 2 = "The second picture is of a Chinese symbol. Your job is to judge the visual pleasantness of the Chinese symbols. We would like you to guess whether the symbol is more or less PLEASANT or UNPLEASANT than the average symbol.
+
+Put your index fingers on the “e” and “i” keys of your keyboard. If you think the symbol is more PLEASANT than the average symbol press the “i”-key on the right, and if you think it is more UNPLEASANT than the average symbol press the “e”-key on the left.
+
+Remember, there are no correct answers; please respond with your own “gut” feeling as quickly as possible.
+
+Please press the SPACEBAR to continue"
+/ 3 = "You will now have some practice trials. Please try your best not to let your reactions to the real-life photos influence your judgment of the Chinese symbols!
+
+Remember:
+
+i = PLEASANT
+
+e = UNPLEASANT
+
+When you are ready, please place your fingers on the appropriate keys.
+
+Please press the SPACEBAR for some PRACTICE TRIALS"
+
+</item>
+
+<item instructionstest>
+/ 1 = "You are now finished with the practice trials. When you are ready, please place your fingers on the appropriate keys and press the spacebar in order to start the computer task. This task will take several minutes to complete.
+
+Remember:
+
+i = PLEASANT
+
+e = UNPLEASANT
+
+Please press the SPACEBAR to start the task"
+
+/ 2 = "You are now done with this computer task.
+
+Please press the SPACEBAR to continue"
+
+</item>
+
+
+<text spacebar>
+/ items = ("Press the SPACE BAR to begin.")
+/ position = (50%, 95%)
+/ valign = bottom
+</text>
+
+
+***********************************************************************
+Performance summary
+***********************************************************************
+
+<trial summary>
+/ stimulustimes = [0=summary]
+/ validresponse = (" ")
+/ recorddata = false
+</trial>
+
+<text summary>
+/ items = ("You judged <% (trial.primeA.percentcorrect) %> % of the Chinese characters to be <% item.attributeAlabel.item.1 %> when they were preceded by a <% item.primeAlabel.item.1 %> picture.
+
+You judged <% (trial.primeB.percentcorrect) %> % of the Chinese characters to be <% item.attributeAlabel.item.1 %> when they were preceded by a <% item.primeBlabel.item.1 %> picture.
+
+You judged <% (trial.primeC.percentcorrect) %> % of the Chinese characters to be <% item.attributeAlabel.item.1 %> when they were preceded by a <% item.primeClabel.item.1 %> picture.
+
+You judged <% (trial.primeNeutral.percentcorrect) %> % of the Chinese characters to be <% item.attributeAlabel.item.1 %> when they were preceded by a <% item.primeNeutrallabel.item.1 %> picture.") 
+/ size = (60%, 60%)
+/ hjustify = left
+ </text>
+
+***********************************************************************
+											STIMULI
+***********************************************************************
+
+***********************************************************************
+This sample AMP can be easily adapted to different target categories 
+and attributes. To change the categories, you need only change the 
+stimulus items and labels immediately below this line.
+
+***********************************************************************
+
+<item attributeAlabel>
+/1 = "Pleasant"
+</item>
+
+<item attributeBlabel>
+/1 = "Unpleasant"
+</item>
+
+
+<item primeAlabel>
+/1 = "Facebook"
+</item>
+
+<item primeBlabel>
+/1 = "Control"
+</item>
+
+<item primeClabel>
+/1 = "Practice"
+</item>
+
+<item primeNeutrallabel>
+/1 = "Neutral"
+</item> 
+
+<item primeA>
+/1 = "fb1.jpg"
+/2 = "fb2.jpg"
+/3 = "fb3.jpg"
+/4 = "fb4.jpg"
+/5 = "fb5.jpg"
+/6 = "fb6.jpg"
+/7 = "fb7.jpg"
+/8 = "fb8.jpg"
+/9 = "fb9.jpg"
+/10 = "fb10.jpg"
+</item>
+
+<item primeB>
+/1 = "control1.jpg"
+/2 = "control2.jpg"
+/3 = "control3.jpg"
+/4 = "control4.jpg"
+/5 = "control5.jpg"
+/6 = "control6.jpg"
+/7 = "control7.jpg"
+/8 = "control8.jpg"
+/9 = "control9.jpg"
+/10 = "control10.jpg"
+</item>
+
+<item primeC>
+/1 = "prac1.jpg"
+/2 = "prac2.jpg"
+/3 = "prac3.jpg"
+/4 = "prac4.jpg"
+/5 = "prac5.jpg"
+</item> 
+
+<item primeNeutral>
+/1 = "neutral.jpg"
+</item>
+
+***********************************************************************
+To change the categories, you need only change the stimulus items and 
+labels immediately above this line. All commands below relate to the 
+AMP procedure, and need only be changed if you wish to modify the 
+generic AMP procedure.
+***********************************************************************
+
+
+
+***********************************************************************
+Symbol and neutral stimuli
+***********************************************************************
+
+<item symbols>
+/1 = "pic1.jpg"
+/2 = "pic2.jpg"
+/3 = "pic3.jpg"
+/4 = "pic4.jpg"
+/5 = "pic5.jpg"
+/6 = "pic6.jpg"
+/7 = "pic7.jpg"
+/8 = "pic8.jpg"
+/9 = "pic9.jpg"
+/10 = "pic10.jpg"
+/11 = "pic11.jpg"
+/12 = "pic12.jpg"
+/13 = "pic13.jpg"
+/14 = "pic14.jpg"
+/15 = "pic15.jpg"
+/16 = "pic16.jpg"
+/17 = "pic17.jpg"
+/18 = "pic18.jpg"
+/19 = "pic19.jpg"
+/20 = "pic20.jpg"
+/21 = "pic21.jpg"
+/22 = "pic22.jpg"
+/23 = "pic23.jpg"
+/24 = "pic24.jpg"
+/25 = "pic25.jpg"
+/26 = "pic26.jpg"
+/27 = "pic27.jpg"
+/28 = "pic28.jpg"
+/29 = "pic29.jpg"
+/30 = "pic30.jpg"
+/31 = "pic31.jpg"
+/32 = "pic32.jpg"
+/33 = "pic33.jpg"
+/34 = "pic34.jpg"
+/35 = "pic35.jpg"
+/36 = "pic36.jpg"
+/37 = "pic37.jpg"
+/38 = "pic38.jpg"
+/39 = "pic39.jpg"
+/40 = "pic40.jpg"
+/41 = "pic41.jpg"
+/42 = "pic42.jpg"
+/43 = "pic43.jpg"
+/44 = "pic44.jpg"
+/45 = "pic45.jpg"
+/46 = "pic46.jpg"
+/47 = "pic47.jpg"
+/48 = "pic48.jpg"
+/49 = "pic49.jpg"
+/50 = "pic50.jpg"
+/51 = "pic51.jpg"
+/52 = "pic52.jpg"
+/53 = "pic53.jpg"
+/54 = "pic54.jpg"
+/55 = "pic55.jpg"
+/56 = "pic56.jpg"
+/57 = "pic57.jpg"
+/58 = "pic58.jpg"
+/59 = "pic59.jpg"
+/60 = "pic60.jpg"
+/61 = "pic61.jpg"
+/62 = "pic62.jpg"
+/63 = "pic63.jpg"
+/64 = "pic64.jpg"
+/65 = "pic65.jpg"
+/66 = "pic66.jpg"
+/67 = "pic67.jpg"
+/68 = "pic68.jpg"
+/69 = "pic69.jpg"
+/70 = "pic70.jpg"
+</item>
+
+<picture target>
+/ items = symbols
+/ select = noreplace
+/ size = (20%, 20%)
+</picture>
+
+<shape blank>
+/ shape = rectangle
+/ color = black
+/ size = (20%, 20%)
+</shape>
+
+<picture primeB>
+/ items = primeB
+/ size = (20%, 20%)
+</picture>
+
+<picture primeA>
+/ items = primeA
+/ size = (20%, 20%)
+</picture>
+
+<picture primeC>
+/ items = primeC
+/ size = (20%, 20%)
+</picture>
+
+<picture primeNeutral>
+/ items = primeNeutral
+/ size = (20%, 20%)
+</picture>
+
+<text attributeAlabel>
+/ items = attributeAlabel
+/ valign = top
+/ halign = right
+/ position = (95%, 5%)
+/ txcolor = green
+/ fontstyle = ("Arial", 5%)
+</text>
+
+<text attributeBlabel>
+/ items = attributeBlabel
+/ valign = top
+/ halign = left
+/ position = (5%, 5%)
+/ txcolor = green
+/ fontstyle = ("Arial", 5%)
+</text>
+
+<text error>
+/ position = (50%, 75%)
+/ items = ("X")
+/ color = (255, 0, 0)
+/ fontstyle = ("Arial", 10%, true)
+</text>
+
+<picture mask>
+/ items = ("mask.jpg")
+/ size = (23%, 23%)
+</picture>
+
+
+***********************************************************************
+Trials
+***********************************************************************
+
+<trial primeC>
+/ validresponse = ("E", "I")
+/ correctresponse = ("I")
+/ stimulustimes = [0=primeC; 75=blank; 200=target; 300=mask]
+/ trialdata = [primeC, target]
+</trial>
+
+<trial primeA>
+/ validresponse = ("E", "I")
+/ correctresponse = ("I")
+/ stimulustimes = [0=primeA; 75=blank; 200=target; 300=mask]
+/ trialdata = [primeA, target]
+</trial>
+
+<trial primeB>
+/ validresponse = ("E", "I")
+/ correctresponse = ("I")
+/ stimulustimes = [0=primeB; 75=blank; 200=target; 300=mask]
+/ trialdata = [primeB, target]
+</trial>
+
+<trial PrimeNeutral>
+/ validresponse = ("E", "I")
+/ correctresponse = ("I")
+/ stimulustimes = [0=primeNeutral; 75=blank; 200=target; 300=mask]
+/ trialdata = [primeNeutral, target]
+</trial>
+
+***********************************************************************
+Blocks
+***********************************************************************
+
+<block practice>
+/ bgstim = (attributeAlabel, attributeBlabel)
+/ trials = [1-3 = instructionspractice; 4-13 = noreplace(primeC)]
+</block>
+
+<block test>
+/ bgstim = (attributeAlabel, attributeBlabel)
+/ trials = [1 = instructionstest; 2-61 = noreplace(primeA, primeB, primeNeutral); 62 = instructionstest]
+</block>
+
+<block summary>
+/ trials = [1=summary]
+/ recorddata = false
+</block>
+
+
+***********************************************************************
+Experiment
+***********************************************************************
+<expt>
+/ blocks = [1=practice; 2=test]
+</expt>
+
+***********************************************************************
+Test Monkey
+***********************************************************************
+<monkey>
+/ latencydistribution = normal(500, 100)
+/ percentcorrect = 90
+</monkey>
+
+
+***********End of Script********************
+
+
