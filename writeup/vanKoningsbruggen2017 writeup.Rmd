@@ -124,7 +124,7 @@ You can comment this section out prior to final report with data collection.
 
 Data preparation following the analysis plan.
 	
-```{r include=F}
+```{r eval=FALSE}
 ###Data Preparation
 
 ####Load Relevant Libraries and Functions
@@ -179,7 +179,7 @@ df.data_clean <- df.data_exc %>%
 
 The analyses as specified in the analysis plan.  
 
-```{r}
+```{r eval=FALSE}
 #1) Bivariate correlations between mean proportion of pleasant responses to FB cues, mean proportion of pleasant responses to control cues, Facebook use, and Facebook cravings
 
 df.data_corr <- df.data_clean %>% 

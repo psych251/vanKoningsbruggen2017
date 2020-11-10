@@ -11,7 +11,7 @@
 
 <meta name="author" content="Angela Lee (angela8@stanford.edu)" />
 
-<meta name="date" content="2020-10-18" />
+<meta name="date" content="2020-11-09" />
 
 <title>Replication of ‘Spontaneous Hedonic Reactions to Social Media Cues’ by van Koningsbruggen, Eden, &amp; Veling (2017, Cyberpsychology, Behavior, &amp; Social Networking)</title>
 
@@ -1518,18 +1518,12 @@ div.tocify {
 
 <h1 class="title toc-ignore">Replication of ‘Spontaneous Hedonic Reactions to Social Media Cues’ by van Koningsbruggen, Eden, &amp; Veling (2017, Cyberpsychology, Behavior, &amp; Social Networking)</h1>
 <h4 class="author">Angela Lee (<a href="mailto:angela8@stanford.edu" class="email">angela8@stanford.edu</a>)</h4>
-<h4 class="date">October 18, 2020</h4>
+<h4 class="date">November 09, 2020</h4>
 
 </div>
 
 
 <!-- Replication reports should all use this template to standardize reporting across projects.  These reports will be public supplementary materials that accompany the summary report(s) of the aggregate results. -->
-<div id="experiment-coding" class="section level2">
-<h2>10-18-2020 Experiment Coding</h2>
-<p>I have not yet collected pilot data for my reproducibility project. For this milestone, I did (1) Updated and coded the AMP paradigm in Inquisit Lab, (2) Built out my survey, and (3) Added my power analysis to the report.</p>
-<p>A link to the survey preview is here: <a href="https://stanforduniversity.ca1.qualtrics.com/jfe/preview/SV_00VAgX95YltvNad?Q_CHL=preview&amp;Q_SurveyVersionID=current" class="uri">https://stanforduniversity.ca1.qualtrics.com/jfe/preview/SV_00VAgX95YltvNad?Q_CHL=preview&amp;Q_SurveyVersionID=current</a>.</p>
-<p>My current challenge is in getting my Qualtrics survey to link to my Inquisit Lab paradigm.</p>
-</div>
 <div id="introduction" class="section level2">
 <h2>Introduction</h2>
 <p>Link to full repo: <a href="https://github.com/psych251/vanKoningsbruggen2017.git" class="uri">https://github.com/psych251/vanKoningsbruggen2017.git</a></p>
@@ -1582,7 +1576,7 @@ div.tocify {
 <h3>Analysis Plan</h3>
 <p>Can also quote directly, though it is less often spelled out effectively for an analysis strategy section. The key is to report an analysis strategy that is as close to the original - data cleaning rules, data exclusion rules, covariates, etc. - as possible.</p>
 <p>Participants were excluded according the a priori criteria specified.</p>
-<p>Data cleaning will proceed as follows. Notes where I am uncertain and would like to clarify in author contact email are marked with a <em>. Hedonic reactions will be calculated for each participant through the AMP data</em>. The original paper notes that they examine the “mean proportion of pleasant responses to Facebook cues” and the “mean proportion of pleasant responses to control cues.” While I would like to check with the original authors to confirm I am doing this correctly, my working plan at the moment to get this number is by (1) extracting and downloading participant response data from Inquisit &amp; Qualtrics, (2) for each participant, identify their responses to the Facebook cues vs.the Control cues, (3) label a “pleasant” response (i-key) to each cue as a 1 and an “un-pleasant” response (e-key) as a 0, (4) for each participant, take the mean of their responses to Facebook-related cues and take the mean of their responses to Control cues.</p>
+<p>Data cleaning will proceed as follows. Notes where I am uncertain and would like to clarify in author contact email are marked with a <em>. Hedonic reactions will be calculated for each participant through the AMP data</em>. The original paper notes that they examine the “mean proportion of pleasant responses to Facebook cues” and the “mean proportion of pleasant responses to control cues.” My working plan at the moment to get this number is by (1) extracting and downloading participant response data from Inquisit &amp; Qualtrics, (2) for each participant, identify their responses to the Facebook cues vs.the Control cues, (3) label a “pleasant” response (i-key) to each cue as a 1 and an “un-pleasant” response (e-key) as a 0, (4) for each participant, take the mean of their responses to Facebook-related cues and take the mean of their responses to Control cues.</p>
 <p>The continuous variable of “Facebook use” will be standardized due to differing scale ranges. We will compute the median and mean* of “Facebook duration” and frequency.</p>
 <p>I am a little confused about the right way to take the mean of non-interval ordinal data for “Facebook duration” and “frequency of Facebook use.” The original study notes that the response categories were e.g. (1 = 10 minutes, 2 = 10-30 mins, 3 = 31-60 mins, 4 = 1-2 hours). However, I’m unsure about how to interpret the mean in this case. The table 2 summary also reports the median response of duration and frequency.</p>
 <p>Once data is cleaned, we will follow the analyses in the original Study 2: (1) Run bivariate correlations between mean proportion of pleasant responses to FB cues, mean proportion of pleasant responses to control cues, Facebook use, and Facebook cravings. (2) Run a mixed-model repeated-measures ANOVA on hedonic reactions with cue type as the within subjects factor (prop. of pleasant responses to FB cues, prop. of pleasant response to control cues) on standardized Facebook use as a continuous predictor. (3) Use simple effects tests to see if frequent Facebook useres have more pleasant responses following FB cues than following control cues. (4) Run a mediation model using PROCESS macro Model 4 in SPSS. AMP responses were scored as a difference score by subtracting proportion of pleasant responses to control cues from proportion of pleasant responses to FB cues (higher scores mean more positive responses to FB cues relative to control cues). Facebook use will be entered as the predictor, AMP difference score as indirect mediation, and Facebook cravings will be the dependent variable.</p>
@@ -1611,10 +1605,118 @@ div.tocify {
 <div id="data-preparation" class="section level3">
 <h3>Data preparation</h3>
 <p>Data preparation following the analysis plan.</p>
+<pre class="r"><code>###Data Preparation
+
+####Load Relevant Libraries and Functions
+
+library(tidyverse)
+library(readr)
+library(knitr)
+library(ggplot2)
+
+####Import data
+
+#read in data
+df.data &lt;- read.csv(###)
+head(df.data) 
+
+
+#### Data exclusion / filtering
+
+df.data_exc %&gt;% 
+  filter(chineselang = 1) %&gt;% #exclude participants familiar with chinese/japanese lang
+  filter(prev_amp_exp = 1) %&gt;% #exclude participants with prev. exp with AMO 
+  filter(no_fb = 1) %&gt;% #exclude participants who don't have FB
+  mutate(filter_straightining = mean(#all responses to target stimuli#)) %&gt;% 
+  filter(filter_straightlining = 1 | filter_straightlining = 0) %&gt;%  #exclude people who responded with the same response key all the way through 
+  #filter [remove participants with incomplete data]
+
+#### Prepare data for analysis - create columns etc.
+# This is translated for R from the OSF SPSS syntax from the original study [https://osf.io/9gue3/]
+  
+df.data_clean &lt;- df.data_exc %&gt;% 
+  #rename columns 
+  #typecast columns %&gt;% 
+
+  #compute composite vars 
+  mutate(media_use_mean = mean(generaluse1, generaluse2, generaluse3, generaluse4, generaluse5, generaluse6, generaluse7)) %&gt;%  #compute mean of all gen media use 
+  mutate(propFB = (trial.primeA.totalpercentcorrect / 100)) %&gt;% #compute prop. of responses to Facebook cues 
+  mutate(propCon = (trial.primeB.totalpercentcorrect / 100)) %&gt;% #compute prop. of responses to Control cues 
+  mutate(cravings = mean(FBcrave1, FBcrave2, FBcrave3, FBcrave4, FBcrave5, FBcrave6)) %&gt;%  
+#compute mean of Facebook cravings 
+  
+  #standardize FB use w/ z-scores bc of differing individual item ranges 
+  #!!! Not sure how they did this. Need to double-check. 
+  mutate(FBmeanuse = mean(ZFBuse1, ZFBuse2, ZFBuse3, ZFBuse4, ZFBuse5, ZFBuse6, ZFBuse7)) %&gt;% 
+
+  #compute AMP diff score for med. analysis 
+  mutate(AMPdiff = propFB - propCon)</code></pre>
 </div>
 <div id="confirmatory-analysis" class="section level3">
 <h3>Confirmatory analysis</h3>
 <p>The analyses as specified in the analysis plan.</p>
+<pre class="r"><code>#1) Bivariate correlations between mean proportion of pleasant responses to FB cues, mean proportion of pleasant responses to control cues, Facebook use, and Facebook cravings
+
+df.data_corr &lt;- df.data_clean %&gt;% 
+  select(FBmeanuse, propFB, propCon, cravings) 
+
+corrtable &lt;- cor(df.data_corr)
+round(corrtable, 2)
+
+corrplot(df.data_corr, 
+         type = &quot;upper&quot;, 
+         order = &quot;hclust&quot;, 
+         tl.col = &quot;black&quot;)
+
+#2) Mixed-model repeated-measures ANOVA on hedonic reactions with cue type as the within subjects factor (prop. of pleasant responses to FB cues, prop. of pleasant response to control cues) on standardized Facebook use as a continuous predictor. 
+
+df.data_clean %&gt;% 
+
+model1 &lt;- glmer(propFB ~ FBuse*meanuse + (1|subject), df.data_clean, family = binomial)
+model2 &lt;- glmer(propCon ~ FBuse*meanuse + (1|subject), df.data_clean, family = binomial)
+
+models &lt;- c(model1, model2)
+
+lapply(models, summary) # summarize each model 
+
+#Role of gender? 
+
+model1b &lt;- glmer(propFB ~ FBuse*meanuse*gender + (1|subject), df.data_clean, family = binomial)
+model2b &lt;- glmer(propCon ~ FBuse*meanuse*gender + (1|subject), df.data_clean, family = binomial)
+
+anova(model1, model1b)
+anova(model2, model2b)
+
+#3) Simple effects tests to see if frequent Facebook users have more pleasant responses following FB cues than following control cues. 
+###? Not sure about this part. 
+
+library(phia)
+testInteractions(model1, 
+                 fixed= &quot;&quot;, 
+                 across = &quot;&quot;, 
+                 adjustment = &quot;none&quot;)
+
+#4) Mediation model using PROCESS macro Model 4 in SPSS. AMP responses were scored as a difference score by subtracting proportion of pleasant responses to control cues from proportion of pleasant responses to FB cues (higher scores mean more positive responses to FB cues relative to control cues). Facebook use will be entered as the predictor, AMP difference score as indirect mediation, and Facebook cravings will be the dependent variable.
+
+library(mediation)
+
+#total effect
+fit.totaleffect = lm(cravings ~ FBusemean, df.data_clean) 
+summary(fit.totaleffect)
+
+#IV on mediator 
+fit.mediator = lm(AMPdiff ~ FBusemean, df.data_clean) 
+summary(fit.mediator)
+
+#mediator on DV 
+fit.dv = lm(cravings ~ FBusemean + AMPdiff, df.data_clean) 
+summary(fit.dv)
+
+results = mediate(fit.mediator, fit.dv, 
+                  treat =&quot;FBusemean&quot;,
+                  mediator = &quot;AMPdiff&quot;, 
+                  boot = T)
+summary(results)</code></pre>
 <p><em>Side-by-side graph with original graph is ideal here</em></p>
 </div>
 <div id="exploratory-analyses" class="section level3">
