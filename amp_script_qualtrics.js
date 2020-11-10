@@ -6,41 +6,37 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 	return ampExtension({
 		primeCats :  [
 			{
-				nameForFeedback : 'Black people',  //Will be used in the user feedback 
-				nameForLogging : 'Black people', //Will be used in the logging
+				nameForFeedback : 'Social media',  //Will be used in the user feedback 
+				nameForLogging : 'Social media', //Will be used in the logging
 				//An array of all media objects for this category.
 				mediaArray : [
-				    {image : 'b01.jpg'}, 
-					{image : 'b02.jpg'}, 
-					{image : 'b03.jpg'}, 
-					{image : 'b04.jpg'}, 
-					{image : 'b05.jpg'}, 
-					{image : 'b06.jpg'}, 
-					{image : 'b07.jpg'}, 
-					{image : 'b08.jpg'}, 
-					{image : 'b09.jpg'}, 
-					{image : 'b10.jpg'}, 
-					{image : 'b11.jpg'}, 
-					{image : 'b12.jpg'}]
+				    {image : 'fb1.jpg'}, 
+					{image : 'fb2.jpg'}, 
+					{image : 'fb3.jpg'}, 
+					{image : 'fb4.jpg'}, 
+					{image : 'fb5.jpg'}, 
+					{image : 'fb6.jpg'}, 
+					{image : 'fb7.jpg'}, 
+					{image : 'fb8.jpg'}, 
+					{image : 'fb9.jpg'}, 
+					{image : 'fb10.jpg'}]
 
 			}, 
 			{
-				nameForFeedback : 'White people',  //Will be used in the user feedback 
-				nameForLogging : 'White people', //Will be used in the logging
+				nameForFeedback : 'Control',  //Will be used in the user feedback 
+				nameForLogging : 'Control', //Will be used in the logging
 				//An array of all media objects for this category.
 				mediaArray : [
-				    {image : 'w01.jpg'}, 
-					{image : 'w02.jpg'}, 
-					{image : 'w03.jpg'}, 
-					{image : 'w04.jpg'}, 
-					{image : 'w05.jpg'}, 
-					{image : 'w06.jpg'}, 
-					{image : 'w07.jpg'}, 
-					{image : 'w08.jpg'}, 
-					{image : 'w09.jpg'}, 
-					{image : 'w10.jpg'}, 
-					{image : 'w11.jpg'}, 
-					{image : 'w12.jpg'}]
+				    {image : 'control1.jpg'}, 
+					{image : 'control2.jpg'}, 
+					{image : 'control3.jpg'}, 
+					{image : 'control4.jpg'}, 
+					{image : 'control5.jpg'}, 
+					{image : 'control6.jpg'}, 
+					{image : 'control7.jpg'}, 
+					{image : 'control8.jpg'}, 
+					{image : 'control9.jpg'}, 
+					{image : 'control10.jpg'}]
 			}
 		],
 
