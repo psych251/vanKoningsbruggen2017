@@ -1,0 +1,33 @@
+﻿<defaults>
+/ fontstyle = ("Arial", 2%)
+/ screencolor = white
+/ txbgcolor = black
+/ txcolor = black
+/ minimumversion = "4.0.0.0"
+/canvasaspectratio = (4, 3)
+</defaults>
+
+
+<surveypage welcomeintro>
+/ caption = "Welcome to our research project!
+
+Thank you for participating. This project combines several smaller studies investigating different issues (for example, you will complete a computer task, but also complete several different questionnaires). Participating in this project will take about 20-25 minutes of your time. Please read and follow the instructions you will receive for each task.
+
+Your answers will be completely anonymous, and your responses cannot be traced back to you. There are no correct answers; please respond with your own opinion!
+
+By clicking the NEXT button, the first part of the study will be loaded. Remember, this may take a couple of minutes (you will see the message 'Inquisit loading')! Just wait a moment and the study will start once loading is finished.
+
+Please press the NEXT button to start"
+/finishlabel = "Next"
+</surveypage>
+
+
+<survey welkom>
+/ pages = [1=welcomeintro]
+/ responsefontstyle = ("Verdana", -12, false, false, false, false, 5, 0)
+/ itemfontstyle = ("Verdana", -13, false, false, false, false, 5, 0)
+/ itemspacing = 2%
+/ showpagenumbers = false
+/ showquestionnumbers = false
+/ showbackbutton = false
+</survey>

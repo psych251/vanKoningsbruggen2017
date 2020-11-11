@@ -1,0 +1,1157 @@
+﻿<defaults>
+/ fontstyle = ("Arial", 3.5%)
+/ screencolor = white
+/ txbgcolor = black
+/ txcolor = black
+/ minimumversion = "4.0.0.0"
+/canvasaspectratio = (4, 3)
+</defaults>
+
+<radiobuttons chinese>
+/ caption = "Do you understand and/or speak the Chinese or Japanese language?"
+/ options = ("yes"; "no")
+/ optionvalues = ("1", "0")
+</radiobuttons>
+
+<radiobuttons sex>
+/ caption = "What is your sex?"
+/ options = ("female"; "male")
+/ optionvalues = ("1", "0")
+</radiobuttons>
+
+<textbox age>
+/ caption = "What is your age?"
+/ mask = positiveinteger
+/ range = (7, 110)
+</textbox>
+
+<radiobuttons language>
+/ caption = "How well do you understand the English language?"
+/ options = ("Not at all"; "Not well"; "Well"; "Very well")
+/ optionvalues = ("1", "2", "3", "4")
+</radiobuttons>
+
+<radiobuttons ethnicity>
+/ caption = "Please specify your ethnicity:"
+/ options = ("White"; "Hispanic or Latino"; "Black or African American"; "Native American or American Indian"; "Asian / Pacific Islander"; "Other")
+</radiobuttons>
+
+<radiobuttons education>
+/ caption = "What is the highest degree or level of school you have completed?"
+/ options = ("No schooling completed"; "Nursery school to 8th grade"; "Some high school, no diploma"; "High school graduate, diploma or the equivalent (for example: GED)"; "Some college credit, no degree"; "Trade/technical/vocational training";"Associate degree"; "Bachelor's degree", "Master's degree", "Professional degree", "Doctorate degree")
+</radiobuttons>
+
+<radiobuttons status>
+/ caption = "Are you currently:"
+/ options = ("Employed for wages"; "Self-employed"; "Out of work for more than 1 year"; "Out of work for less than 1 year"; "A homemaker"; "A student"; "Military"; "Retired"; "Unable to work"; "Other")
+</radiobuttons>
+
+<radiobuttons environment>
+/ caption="Please indicate the amount of noise in the environment you are completing this questionnaire."
+/ options=("no noise and distractions"; "some noise and distractions"; "quite a bit of noise and distractions"; "substantial amount of noise and distractions"; "only noise and distractions")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+
+
+<radiobuttons Account>
+/ caption = "Do you currently have a Facebook account?"
+/ options = ("yes"; "no")
+/ optionvalues = ("1", "0")
+</radiobuttons>
+
+<radiobuttons FBuse1>
+/ caption = "On average, approximately how many minutes per day do you spend on Facebook?"
+/ options = ("10 minutes or less"; "10-30 minutes"; "31-60 minutes"; "1-2 hours"; "2-3 hours"; "3+ hours")
+/ optionvalues = ("1", "2", "3", "4", "5", "6")
+</radiobuttons>
+
+<radiobuttons FBuse2>
+/ caption = "Approximately how many friends are on your Facebook Friends List?"
+/ options = ("10 or less"; "11-50"; "51-100"; "101-150"; "151-200"; "201-250"; "251-300"; "301-400"; "over 400")
+/ optionvalues = ("0", "1", "2", "3", "4", "5", "6", "7", "8")
+</radiobuttons>
+
+<radiobuttons FBuse3>
+/ caption = "Approximately how long have you had your Facebook profile?"
+/ options = ("less than 6 months"; "6 months"; "1 year"; "1.5 years"; "2 years"; "2.5 years"; "3+ years")
+/ optionvalues = ("1", "2", "3", "4", "5", "6", "7")
+</radiobuttons>
+
+<radiobuttons online1>
+/ caption ="How often do you check your Facebook account?"
+/ options = ("more than 4 times daily"; "3-4 times daily"; "twice daily"; "once daily"; "2 or more times weekly"; "once weekly"; "twice monthly"; "once monthly"; "less than once monthly"; "a few times a year"; "less than once per year")
+/ optionvalues = ("11", "10", "9", "8", "7", "6", "5", "4", "3", "2", "1")
+</radiobuttons>
+
+<radiobuttons online2>
+/ caption ="How often do you use Facebook during work/school?"
+/ options = ("more than 4 times daily"; "3-4 times daily"; "twice daily"; "once daily"; "2 or more times weekly"; "once weekly"; "twice monthly"; "once monthly"; "less than once monthly"; "a few times a year"; "less than once per year")
+/ optionvalues = ("11", "10", "9", "8", "7", "6", "5", "4", "3", "2", "1")
+</radiobuttons>
+
+<radiobuttons online3>
+/ caption ="How often do you check your own wall?"
+/ options = ("more than 4 times daily"; "3-4 times daily"; "twice daily"; "once daily"; "2 or more times weekly"; "once weekly"; "twice monthly"; "once monthly"; "less than once monthly"; "a few times a year"; "less than once per year")
+/ optionvalues = ("11", "10", "9", "8", "7", "6", "5", "4", "3", "2", "1")
+</radiobuttons>
+
+<radiobuttons online4>
+/ caption ="How often do you change your Facebook status?"
+/ options = ("more than 4 times daily"; "3-4 times daily"; "twice daily"; "once daily"; "2 or more times weekly"; "once weekly"; "twice monthly"; "once monthly"; "less than once monthly"; "a few times a year"; "less than once per year")
+/ optionvalues = ("11", "10", "9", "8", "7", "6", "5", "4", "3", "2", "1")
+</radiobuttons>
+
+<radiobuttons online5>
+/ caption ="How often do you send private Facebook messages?"
+/ options = ("more than 4 times daily"; "3-4 times daily"; "twice daily"; "once daily"; "2 or more times weekly"; "once weekly"; "twice monthly"; "once monthly"; "less than once monthly"; "a few times a year"; "less than once per year")
+/ optionvalues = ("11", "10", "9", "8", "7", "6", "5", "4", "3", "2", "1")
+</radiobuttons>
+
+<radiobuttons online6>
+/ caption ="How often do you comment on others’ photos?"
+/ options = ("more than 4 times daily"; "3-4 times daily"; "twice daily"; "once daily"; "2 or more times weekly"; "once weekly"; "twice monthly"; "once monthly"; "less than once monthly"; "a few times a year"; "less than once per year")
+/ optionvalues = ("11", "10", "9", "8", "7", "6", "5", "4", "3", "2", "1")
+</radiobuttons>
+
+<radiobuttons online7>
+/ caption ="How often do you post on others’ walls?"
+/ options = ("more than 4 times daily"; "3-4 times daily"; "twice daily"; "once daily"; "2 or more times weekly"; "once weekly"; "twice monthly"; "once monthly"; "less than once monthly"; "a few times a year"; "less than once per year")
+/ optionvalues = ("11", "10", "9", "8", "7", "6", "5", "4", "3", "2", "1")
+</radiobuttons>
+
+<radiobuttons FBatt1>
+/ caption = "Facebook is part of my everyday activity"
+/ options = ("strongly disagree"; "disagree"; "neutral"; "agree"; "strongly agree")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons FBatt2>
+/ caption = "I am proud to tell people I am on Facebook"
+/ options = ("strongly disagree"; "disagree"; "neutral"; "agree"; "strongly agree")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons FBatt3>
+/ caption = "I dedicate part of my daily schedule to Facebook"
+/ options = ("strongly disagree"; "disagree"; "neutral"; "agree"; "strongly agree")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons FBatt4>
+/ caption = "I feel out of touch when I haven’t logged on to Facebook for a while"
+/ options = ("strongly disagree"; "disagree"; "neutral"; "agree"; "strongly agree")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons FBatt5>
+/ caption = "I feel I am part of the Facebook community"
+/ options = ("strongly disagree"; "disagree"; "neutral"; "agree"; "strongly agree")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons FBatt6>
+/ caption = "I would be sad if Facebook shut down"
+/ options = ("strongly disagree"; "disagree"; "neutral"; "agree"; "strongly agree")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons Satisfaction>
+/ caption = "How satisfied are you with Facebook, overall?"
+/ options = ("not satisfied at all"; "barely satisfied"; "neutral"; "satisfied"; "very satisfied")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons ambi1>
+/ caption = "If you only think about the positive aspects of Facebook and ignore all negative aspects, how positive are you about Facebook then?"
+/ options = ("not at all positive"; "slightly positive"; "moderately positive"; "very positive"; "completely positive")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons ambi2>
+/ caption = "If you only think about the negative aspects of Facebook and ignore all positive aspects, how negative are you about Facebook then?"
+/ options = ("not at all negative"; "slightly negative"; "moderately negative"; "very negative"; "completely negative")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons FBadd1>
+/ caption = "Spent a lot of time thinking about Facebook or planned use of Facebook?"
+/ options = ("very rarely"; "rarely"; "sometimes"; "often"; "very often")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons FBadd2>
+/ caption = "Thought about how you could free more time to spend on Facebook?"
+/ options = ("very rarely"; "rarely"; "sometimes"; "often"; "very often")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons FBadd3>
+/ caption = "Thought a lot about what has happened on Facebook recently?"
+/ options = ("very rarely"; "rarely"; "sometimes"; "often"; "very often")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons FBadd4>
+/ caption = "Spent more time on Facebook than initially intended?"
+/ options = ("very rarely"; "rarely"; "sometimes"; "often"; "very often")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons FBadd5>
+/ caption = "Felt an urge to use Facebook more and more?"
+/ options = ("very rarely"; "rarely"; "sometimes"; "often"; "very often")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons FBadd6>
+/ caption = "Felt that you had to use Facebook more and more in order to get the same pleasure from it?"
+/ options = ("very rarely"; "rarely"; "sometimes"; "often"; "very often")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons FBadd7>
+/ caption = "Used Facebook in order to forget about personal problems?"
+/ options = ("very rarely"; "rarely"; "sometimes"; "often"; "very often")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons FBadd8>
+/ caption = "Used Facebook to reduce feelings of guilt, anxiety, helplessness, and depression?"
+/ options = ("very rarely"; "rarely"; "sometimes"; "often"; "very often")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons FBadd9>
+/ caption = "Used Facebook in order to reduce restlessness?"
+/ options = ("very rarely"; "rarely"; "sometimes"; "often"; "very often")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons FBadd10>
+/ caption = "Experienced that others have told you to reduce your use of Facebook but not listened to them?"
+/ options = ("very rarely"; "rarely"; "sometimes"; "often"; "very often")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons FBadd11>
+/ caption = "Tried to cut down on the use of Facebook without success?"
+/ options = ("very rarely"; "rarely"; "sometimes"; "often"; "very often")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons FBadd12>
+/ caption = "Decided to use Facebook less frequently, but not managed to do so?"
+/ options = ("very rarely"; "rarely"; "sometimes"; "often"; "very often")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons FBadd13>
+/ caption = "Become restless or troubled if you have been prohibited from using Facebook?"
+/ options = ("very rarely"; "rarely"; "sometimes"; "often"; "very often")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons FBadd14>
+/ caption = "Become irritable if you have been prohibited from using Facebook?"
+/ options = ("very rarely"; "rarely"; "sometimes"; "often"; "very often")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons FBadd15>
+/ caption = "Felt bad if you, for different reasons, could not log on to Facebook for some time?"
+/ options = ("very rarely"; "rarely"; "sometimes"; "often"; "very often")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons FBadd16>
+/ caption = "Used Facebook so much that it has had a negative impact on your job/studies?"
+/ options = ("very rarely"; "rarely"; "sometimes"; "often"; "very often")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons FBadd17>
+/ caption = "Given less priority to hobbies, leisure activities, and exercise because of Facebook?"
+/ options = ("very rarely"; "rarely"; "sometimes"; "often"; "very often")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons FBadd18>
+/ caption = "Ignored your partner, family members, or friends because of Facebook?"
+/ options = ("very rarely"; "rarely"; "sometimes"; "often"; "very often")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons FBadd19>
+/ caption = "Has your time on Facebook caused sleep deprivation?"
+/ options = ("very rarely"; "rarely"; "sometimes"; "often"; "very often")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons FBadd20>
+/ caption = "Have you neglected other important activities (e.g., school, work, sports) to use Facebook?"
+/ options = ("very rarely"; "rarely"; "sometimes"; "often"; "very often")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons FBadd21>
+/ caption = "Did you feel bad after being on Facebook for a long time?"
+/ options = ("very rarely"; "rarely"; "sometimes"; "often"; "very often")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons constraint1>
+/ caption = "How often are you trying to reduce your use of Facebook?"
+/ options = ("never"; "rarely"; "sometimes"; "often"; "always")
+/ optionvalues = ("0", "1", "2", "3", "4")
+</radiobuttons>
+
+<radiobuttons constraint2>
+/ caption = "Do you use Facebook sensibly in front of others and overuse alone?"
+/ options = ("never"; "rarely"; "often"; "always")
+/ optionvalues = ("0", "1", "2", "3")
+</radiobuttons>
+
+<radiobuttons constraint3>
+/ caption = "Do you give too much time and thought to Facebook?"
+/ options = ("never"; "rarely"; "often"; "always")
+/ optionvalues = ("0", "1", "2", "3")
+</radiobuttons>
+
+<radiobuttons constraint4>
+/ caption = "Do you have feelings of guilt after overusing Facebook?"
+/ options = ("never"; "rarely"; "often"; "always")
+/ optionvalues = ("0", "1", "2", "3")
+</radiobuttons>
+
+<radiobuttons constraint5>
+/ caption = "How conscious are you regarding your use of Facebook?"
+/ options = ("not at all"; "slightly"; "moderately"; "extremely")
+/ optionvalues = ("0", "1", "2", "3")
+</radiobuttons>
+
+<radiobuttons selfrep1>
+/ caption = "Using Facebook is something I do frequently"
+/ options = ("strongly disagree"; "disagree"; "slightly disagree"; "neutral"; "slightly agree"; "agree"; "strongly agree")
+/ optionvalues = ("1", "2", "3", "4", "5", "6", "7")
+</radiobuttons>
+
+<radiobuttons selfrep2>
+/ caption = "Using Facebook is something I do automatically"
+/ options = ("strongly disagree"; "disagree"; "slightly disagree"; "neutral"; "slightly agree"; "agree"; "strongly agree")
+/ optionvalues = ("1", "2", "3", "4", "5", "6", "7")
+</radiobuttons>
+
+<radiobuttons selfrep3>
+/ caption = "Using Facebook is something I do without having to consciously remember"
+/ options = ("strongly disagree"; "disagree"; "slightly disagree"; "neutral"; "slightly agree"; "agree"; "strongly agree")
+/ optionvalues = ("1", "2", "3", "4", "5", "6", "7")
+</radiobuttons>
+
+<radiobuttons selfrep4>
+/ caption = "Using Facebook is something that makes me feel weird if I do not do it"
+/ options = ("strongly disagree"; "disagree"; "slightly disagree"; "neutral"; "slightly agree"; "agree"; "strongly agree")
+/ optionvalues = ("1", "2", "3", "4", "5", "6", "7")
+</radiobuttons>
+
+<radiobuttons selfrep5>
+/ caption = "Using Facebook is something I do without thinking"
+/ options = ("strongly disagree"; "disagree"; "slightly disagree"; "neutral"; "slightly agree"; "agree"; "strongly agree")
+/ optionvalues = ("1", "2", "3", "4", "5", "6", "7")
+</radiobuttons>
+
+<radiobuttons selfrep6>
+/ caption = "Using Facebook is something that would require effort not to do it"
+/ options = ("strongly disagree"; "disagree"; "slightly disagree"; "neutral"; "slightly agree"; "agree"; "strongly agree")
+/ optionvalues = ("1", "2", "3", "4", "5", "6", "7")
+</radiobuttons>
+
+<radiobuttons selfrep7>
+/ caption = "Using Facebook is something that belongs to my (daily, weekly, monthly) routine"
+/ options = ("strongly disagree"; "disagree"; "slightly disagree"; "neutral"; "slightly agree"; "agree"; "strongly agree")
+/ optionvalues = ("1", "2", "3", "4", "5", "6", "7")
+</radiobuttons>
+
+
+<radiobuttons selfrep8>
+/ caption = "Using Facebook is something I start doing before I realize I’m doing it"
+/ options = ("strongly disagree"; "disagree"; "slightly disagree"; "neutral"; "slightly agree"; "agree"; "strongly agree")
+/ optionvalues = ("1", "2", "3", "4", "5", "6", "7")
+</radiobuttons>
+
+<radiobuttons selfrep9>
+/ caption = "Using Facebook is something I would find hard not to do"
+/ options = ("strongly disagree"; "disagree"; "slightly disagree"; "neutral"; "slightly agree"; "agree"; "strongly agree")
+/ optionvalues = ("1", "2", "3", "4", "5", "6", "7")
+</radiobuttons>
+
+<radiobuttons selfrep10>
+/ caption = "Using Facebook is something I have no need to think about doing"
+/ options = ("strongly disagree"; "disagree"; "slightly disagree"; "neutral"; "slightly agree"; "agree"; "strongly agree")
+/ optionvalues = ("1", "2", "3", "4", "5", "6", "7")
+</radiobuttons>
+
+<radiobuttons selfrep11>
+/ caption = "Using Facebook is something that’s typically “me”"
+/ options = ("strongly disagree"; "disagree"; "slightly disagree"; "neutral"; "slightly agree"; "agree"; "strongly agree")
+/ optionvalues = ("1", "2", "3", "4", "5", "6", "7")
+</radiobuttons>
+
+<radiobuttons selfrep12>
+/ caption = "Using Facebook is something I have been doing for a long time"
+/ options = ("strongly disagree"; "disagree"; "slightly disagree"; "neutral"; "slightly agree"; "agree"; "strongly agree")
+/ optionvalues = ("1", "2", "3", "4", "5", "6", "7")
+</radiobuttons>
+
+<radiobuttons loafing1>
+/ caption = "During office/school hours, how often do you use the Internet at work/school to access non-job related Websites"
+/ options = ("never"; "a few times/month"; "a few times/week"; "once a day"; "a few times/day"; "constantly")
+/ optionvalues = ("0", "1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons loafing2>
+/ caption = "During office/school hours, how often do you use the Internet at work/school to access general news Websites"
+/ options = ("never"; "a few times/month"; "a few times/week"; "once a day"; "a few times/day"; "constantly")
+/ optionvalues = ("0", "1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons loafing3>
+/ caption = "During office/school hours, how often do you use the Internet at work/school to access entertainment-related Websites"
+/ options = ("never"; "a few times/month"; "a few times/week"; "once a day"; "a few times/day"; "constantly")
+/ optionvalues = ("0", "1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons loafing4>
+/ caption = "During office/school hours, how often do you use the Internet at work/school to access sports related Websites"
+/ options = ("never"; "a few times/month"; "a few times/week"; "once a day"; "a few times/day"; "constantly")
+/ optionvalues = ("0", "1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons loafing5>
+/ caption = "During office/school hours, how often do you use the Internet at work/school to access instant messaging/chat online (IRC)"
+/ options = ("never"; "a few times/month"; "a few times/week"; "once a day"; "a few times/day"; "constantly")
+/ optionvalues = ("0", "1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons loafing6>
+/ caption = "During office/school hours, how often do you use the Internet at work/school to download non-work/school related information"
+/ options = ("never"; "a few times/month"; "a few times/week"; "once a day"; "a few times/day"; "constantly")
+/ optionvalues = ("0", "1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons loafing7>
+/ caption = "During office/school hours, how often do you use the Internet at work/school to look for employment"
+/ options = ("never"; "a few times/month"; "a few times/week"; "once a day"; "a few times/day"; "constantly")
+/ optionvalues = ("0", "1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons loafing8>
+/ caption = "During office/school hours, how often do you use the Internet at work/school to shop online"
+/ options = ("never"; "a few times/month"; "a few times/week"; "once a day"; "a few times/day"; "constantly")
+/ optionvalues = ("0", "1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons loafing9>
+/ caption = "During office/school hours, how often do you use the Internet at work/school to play online games"
+/ options = ("never"; "a few times/month"; "a few times/week"; "once a day"; "a few times/day"; "constantly")
+/ optionvalues = ("0", "1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons loafing10>
+/ caption = "During office/school hours, how often do you use the Internet at work/school to access adult-oriented (sexually explicit) Websites"
+/ options = ("never"; "a few times/month"; "a few times/week"; "once a day"; "a few times/day"; "constantly")
+/ optionvalues = ("0", "1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons loafing11>
+/ caption = "During office/school hours, how often do you use the Internet at work/school to check non-work/school related e-mail"
+/ options = ("never"; "a few times/month"; "a few times/week"; "once a day"; "a few times/day"; "constantly")
+/ optionvalues = ("0", "1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons loafing12>
+/ caption = "During office/school hours, how often do you use the Internet at work/school to send non-work/school related e-mail"
+/ options = ("never"; "a few times/month"; "a few times/week"; "once a day"; "a few times/day"; "constantly")
+/ optionvalues = ("0", "1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons loafing13>
+/ caption = "During office/school hours, how often do you use the Internet at work/school to receive non-work/school related e-mail"
+/ options = ("never"; "a few times/month"; "a few times/week"; "once a day"; "a few times/day"; "constantly")
+/ optionvalues = ("0", "1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons loafing14>
+/ caption = "During office/school hours, how often do you use the Internet at work/school to use Facebook for non-work/school related reasons"
+/ options = ("never"; "a few times/month"; "a few times/week"; "once a day"; "a few times/day"; "constantly")
+/ optionvalues = ("0", "1", "2", "3", "4", "5")
+</radiobuttons>
+
+
+
+<radiobuttons procastination1>
+/ caption = "I delay making decisions until it’s too late"
+/ options = ("Very much unlike me"; "Somewhat unlike me"; "Neutral"; "Somewhat like me"; "Very much like me")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons procastination2>
+/ caption = "Even after I make a decision I delay acting upon it"
+/ options = ("Very much unlike me"; "Somewhat unlike me"; "Neutral"; "Somewhat like me"; "Very much like me")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons procastination3>
+/ caption = "I waste a lot of time on trivial matters before getting to the final decisions"
+/ options = ("Very much unlike me"; "Somewhat unlike me"; "Neutral"; "Somewhat like me"; "Very much like me")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons procastination4>
+/ caption = "In preparation for some deadlines, I often waste time by doing other things"
+/ options = ("Very much unlike me"; "Somewhat unlike me"; "Neutral"; "Somewhat like me"; "Very much like me")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons procastination5>
+/ caption = "Even jobs that require little else except sitting down and doing them, I find that they seldom get done for days"
+/ options = ("Very much unlike me"; "Somewhat unlike me"; "Neutral"; "Somewhat like me"; "Very much like me")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons procastination6>
+/ caption = "I often find myself performing tasks that I had intended to do days before"
+/ options = ("Very much unlike me"; "Somewhat unlike me"; "Neutral"; "Somewhat like me"; "Very much like me")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+
+<radiobuttons procastination7>
+/ caption = "I am continually saying “I’ll do it tomorrow”"
+/ options = ("Very much unlike me"; "Somewhat unlike me"; "Neutral"; "Somewhat like me"; "Very much like me")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons procastination8>
+/ caption = "I generally delay before starting on work I have to do"
+/ options = ("Very much unlike me"; "Somewhat unlike me"; "Neutral"; "Somewhat like me"; "Very much like me")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons procastination9>
+/ caption = "I find myself running out of time"
+/ options = ("Very much unlike me"; "Somewhat unlike me"; "Neutral"; "Somewhat like me"; "Very much like me")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons procastination10>
+/ caption = "I don’t get things done on time"
+/ options = ("Very much unlike me"; "Somewhat unlike me"; "Neutral"; "Somewhat like me"; "Very much like me")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons procastination11>
+/ caption = "I am not very good at meeting deadlines"
+/ options = ("Very much unlike me"; "Somewhat unlike me"; "Neutral"; "Somewhat like me"; "Very much like me")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons procastination12>
+/ caption = "Putting things off till the last minute has cost me money in the past"
+/ options = ("Very much unlike me"; "Somewhat unlike me"; "Neutral"; "Somewhat like me"; "Very much like me")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons procastination13>
+/ caption = "I spend a lot of time on Facebook instead of doing the things I should do" 
+/ options = ("Very much unlike me"; "Somewhat unlike me"; "Neutral"; "Somewhat like me"; "Very much like me")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons selfcontrol1>
+/ caption = "I am good at resisting temptation" 
+/ options = ("Very much unlike me"; "Somewhat unlike me"; "Neutral"; "Somewhat like me"; "Very much like me")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons selfcontrol2>
+/ caption = "I have a hard time breaking bad habits" 
+/ options = ("Very much unlike me"; "Somewhat unlike me"; "Neutral"; "Somewhat like me"; "Very much like me")
+/ optionvalues = ("5", "4", "3", "2", "1")
+</radiobuttons>
+
+<radiobuttons selfcontrol3>
+/ caption = "I am lazy"
+/ options = ("Very much unlike me"; "Somewhat unlike me"; "Neutral"; "Somewhat like me"; "Very much like me")
+/ optionvalues = ("5", "4", "3", "2", "1")
+</radiobuttons>
+
+<radiobuttons selfcontrol4>
+/ caption = "I say inappropriate things"
+/ options = ("Very much unlike me"; "Somewhat unlike me"; "Neutral"; "Somewhat like me"; "Very much like me")
+/ optionvalues = ("5", "4", "3", "2", "1")
+</radiobuttons>
+
+<radiobuttons selfcontrol5>
+/ caption = "I do certain things that are bad for me, if they are fun"
+/ options = ("Very much unlike me"; "Somewhat unlike me"; "Neutral"; "Somewhat like me"; "Very much like me")
+/ optionvalues = ("5", "4", "3", "2", "1")
+</radiobuttons>
+
+<radiobuttons selfcontrol6>
+/ caption = "I refuse things that are bad for me"
+/ options = ("Very much unlike me"; "Somewhat unlike me"; "Neutral"; "Somewhat like me"; "Very much like me")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons selfcontrol7>
+/ caption = "I wish I had more self-discipline"
+/ options = ("Very much unlike me"; "Somewhat unlike me"; "Neutral"; "Somewhat like me"; "Very much like me")
+/ optionvalues = ("5", "4", "3", "2", "1")
+</radiobuttons>
+
+<radiobuttons selfcontrol8>
+/ caption = "People would say that I have iron self-discipline"
+/ options = ("Very much unlike me"; "Somewhat unlike me"; "Neutral"; "Somewhat like me"; "Very much like me")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons selfcontrol9>
+/ caption = "Pleasure and fun sometimes keep me from getting work done"
+/ options = ("Very much unlike me"; "Somewhat unlike me"; "Neutral"; "Somewhat like me"; "Very much like me")
+/ optionvalues = ("5", "4", "3", "2", "1")
+</radiobuttons>
+
+<radiobuttons selfcontrol10>
+/ caption = "I have trouble concentrating"
+/ options = ("Very much unlike me"; "Somewhat unlike me"; "Neutral"; "Somewhat like me"; "Very much like me")
+/ optionvalues = ("5", "4", "3", "2", "1")
+</radiobuttons>
+
+<radiobuttons selfcontrol11>
+/ caption = "I am able to work effectively toward long-term goals"
+/ options = ("Very much unlike me"; "Somewhat unlike me"; "Neutral"; "Somewhat like me"; "Very much like me")
+/ optionvalues = ("1", "2", "3", "4", "5")
+</radiobuttons>
+
+<radiobuttons selfcontrol12>
+/ caption = "Sometimes I can’t stop myself from doing something, even if I know it is wrong"
+/ options = ("Very much unlike me"; "Somewhat unlike me"; "Neutral"; "Somewhat like me"; "Very much like me")
+/ optionvalues = ("5", "4", "3", "2", "1")
+</radiobuttons>
+
+<radiobuttons selfcontrol13>
+/ caption = "I often act without thinking through all the alternatives"
+/ options = ("Very much unlike me"; "Somewhat unlike me"; "Neutral"; "Somewhat like me"; "Very much like me")
+/ optionvalues = ("5", "4", "3", "2", "1")
+</radiobuttons>
+
+<radiobuttons generaluse1>
+/ caption = "talking"
+/ options = ("less than once a week"; "once a week"; "daily"; "2-3 times a day"; "once an hour"; "more than once an hour")
+/ optionvalues = ("1", "2", "3", "4", "5", "6")
+</radiobuttons>
+
+<radiobuttons generaluse2>
+/ caption = "texting"
+/ options = ("less than once a week"; "once a week"; "daily"; "2-3 times a day"; "once an hour"; "more than once an hour")
+/ optionvalues = ("1", "2", "3", "4", "5", "6")
+</radiobuttons>
+
+<radiobuttons generaluse3>
+/ caption = "reading email"
+/ options = ("less than once a week"; "once a week"; "daily"; "2-3 times a day"; "once an hour"; "more than once an hour")
+/ optionvalues = ("1", "2", "3", "4", "5", "6")
+</radiobuttons>
+
+<radiobuttons generaluse4>
+/ caption = "sending email"
+/ options = ("less than once a week"; "once a week"; "daily"; "2-3 times a day"; "once an hour"; "more than once an hour")
+/ optionvalues = ("1", "2", "3", "4", "5", "6")
+</radiobuttons>
+
+<radiobuttons generaluse5>
+/ caption = "posting comments, photos, or status updates on Social Network Sites (Facebook and/or any other)"
+/ options = ("less than once a week"; "once a week"; "daily"; "2-3 times a day"; "once an hour"; "more than once an hour")
+/ optionvalues = ("1", "2", "3", "4", "5", "6")
+</radiobuttons>
+
+<radiobuttons generaluse6>
+/ caption = "looking at Social Network Sites (Facebook and/or any other)"
+/ options = ("less than once a week"; "once a week"; "daily"; "2-3 times a day"; "once an hour"; "more than once an hour")
+/ optionvalues = ("1", "2", "3", "4", "5", "6")
+</radiobuttons>
+
+<radiobuttons generaluse7>
+/ caption = "browsing on the Internet"
+/ options = ("less than once a week"; "once a week"; "daily"; "2-3 times a day"; "once an hour"; "more than once an hour")
+/ optionvalues = ("1", "2", "3", "4", "5", "6")
+</radiobuttons>
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+<surveypage fbimpuls1>
+/ caption = "Please answer the following question"
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [ 1=account] 
+</surveypage>
+
+<surveypage fbimpuls2>
+/ caption = "Please answer the following questions"
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=fbuse1; 2=fbuse2] 
+/ skip = [radiobuttons.account.response=="0"]
+</surveypage>
+
+<surveypage fbimpuls3>
+/ caption = "Please answer the following questions"
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=fbuse3; 2=online1] 
+/ skip = [radiobuttons.account.response=="0"]
+</surveypage>
+
+<surveypage fbimpuls4>
+/ caption = "Please answer the following questions"
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=online2; 2=online3] 
+/ skip = [radiobuttons.account.response=="0"]
+</surveypage>
+
+<surveypage fbimpuls5>
+/ caption = "Please answer the following questions"
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=online4; 2=online5] 
+/ skip = [radiobuttons.account.response=="0"]
+</surveypage>
+
+<surveypage fbimpuls6>
+/ caption = "Please answer the following questions"
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=online6; 2=online7] 
+/ skip = [radiobuttons.account.response=="0"]
+</surveypage>
+
+<surveypage fbimpuls7>
+/ caption = "Please answer the following questions "
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=fbatt1; 2=fbatt2] 
+/ skip = [radiobuttons.account.response=="0"]
+</surveypage>
+
+<surveypage fbimpuls8>
+/ caption = "Please answer the following questions "
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=fbatt3; 2=fbatt4] 
+/ skip = [radiobuttons.account.response=="0"]
+</surveypage>
+
+
+<surveypage fbimpuls9>
+/ caption = "Please answer the following questions "
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=fbatt5; 2=fbatt6] 
+/ skip = [radiobuttons.account.response=="0"]
+</surveypage>
+
+<surveypage fbimpuls10>
+/ caption = "Please answer the following questions "
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=satisfaction; 2=ambi1] 
+/ skip = [radiobuttons.account.response=="0"]
+</surveypage>
+
+<surveypage fbimpuls11>
+/ caption = "Please answer the following questions "
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=ambi2] 
+/ skip = [radiobuttons.account.response=="0"]
+</surveypage>
+
+<surveypage fbimpuls12>
+/ caption = "Please answer the following questions: How often during the last year have you..."
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=fbadd1; 2=fbadd2; 3=fbadd3] 
+/ skip = [radiobuttons.account.response=="0"]
+</surveypage>
+
+<surveypage fbimpuls13>
+/ caption = "Please answer the following questions: How often during the last year have you..."
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=fbadd4; 2=fbadd5] 
+/ skip = [radiobuttons.account.response=="0"]
+</surveypage>
+
+<surveypage fbimpuls14>
+/ caption = "Please answer the following questions: How often during the last year have you..."
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=fbadd6; 2=fbadd7] 
+/ skip = [radiobuttons.account.response=="0"]
+</surveypage>
+
+<surveypage fbimpuls15>
+/ caption = "Please answer the following questions: How often during the last year have you... "
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=fbadd8; 2=fbadd9] 
+/ skip = [radiobuttons.account.response=="0"]
+</surveypage>
+
+<surveypage fbimpuls16>
+/ caption = "Please answer the following questions: How often during the last year have you... "
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=fbadd10; 2=fbadd11] 
+/ skip = [radiobuttons.account.response=="0"]
+</surveypage>
+
+<surveypage fbimpuls17>
+/ caption = "Please answer the following questions: How often during the last year have you..."
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=fbadd12; 2=fbadd13]
+/ skip = [radiobuttons.account.response=="0"]
+</surveypage>
+
+<surveypage fbimpuls18>
+/ caption = "Please answer the following questions: How often during the last year have you..."
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=fbadd14; 2=fbadd15]
+/ skip = [radiobuttons.account.response=="0"]
+</surveypage>
+
+<surveypage fbimpuls19>
+/ caption = "Please answer the following questions: How often during the last year have you..."
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=fbadd16; 2=fbadd17]
+/ skip = [radiobuttons.account.response=="0"]
+</surveypage>
+
+<surveypage fbimpuls20>
+/ caption = "Please answer the following questions: How often during the last year have you..."
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=fbadd18; 2=fbadd19]
+/ skip = [radiobuttons.account.response=="0"]
+</surveypage>
+
+<surveypage fbimpuls21>
+/ caption = "Please answer the following questions: How often during the last year have you..."
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=fbadd20; 2=fbadd21]
+/ skip = [radiobuttons.account.response=="0"]
+</surveypage>
+
+<surveypage fbimpuls22>
+/ caption = "Please answer the following questions "
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=constraint1; 2=constraint2] 
+/ skip = [radiobuttons.account.response=="0"]
+</surveypage>
+
+<surveypage fbimpuls23>
+/ caption = "Please answer the following questions "
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=constraint3; 2=constraint4] 
+/ skip = [radiobuttons.account.response=="0"]
+</surveypage>
+
+<surveypage fbimpuls24>
+/ caption = "Please answer the following questions "
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=constraint5] 
+/ skip = [radiobuttons.account.response=="0"]
+</surveypage>
+
+<surveypage fbimpuls25>
+/ caption = "Please answer the following questions "
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=selfrep1; 2=selfrep2] 
+/ skip = [radiobuttons.account.response=="0"]
+</surveypage>
+
+<surveypage fbimpuls26>
+/ caption = "Please answer the following questions "
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=selfrep3; 2=selfrep4] 
+/ skip = [radiobuttons.account.response=="0"]
+</surveypage>
+
+<surveypage fbimpuls27>
+/ caption = "Please answer the following questions "
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=selfrep5; 2=selfrep6] 
+/ skip = [radiobuttons.account.response=="0"]
+</surveypage>
+
+<surveypage fbimpuls28>
+/ caption = "Please answer the following questions "
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=selfrep7; 2=selfrep8] 
+/ skip = [radiobuttons.account.response=="0"]
+</surveypage>
+
+<surveypage fbimpuls29>
+/ caption = "Please answer the following questions "
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=selfrep9; 2=selfrep10] 
+/ skip = [radiobuttons.account.response=="0"]
+</surveypage>
+
+
+<surveypage fbimpuls30>
+/ caption = "Please answer the following questions "
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=selfrep11; 2=selfrep12] 
+/ skip = [radiobuttons.account.response=="0"]
+</surveypage>
+
+
+<surveypage fbimpuls31>
+/ caption = "Please answer the following questions "
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=loafing1; 2=loafing2] 
+</surveypage>
+
+
+<surveypage fbimpuls32>
+/ caption = "Please answer the following questions "
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=loafing3; 2=loafing4] 
+</surveypage>
+
+<surveypage fbimpuls33>
+/ caption = "Please answer the following questions "
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=loafing5; 2=loafing6] 
+</surveypage>
+
+<surveypage fbimpuls34>
+/ caption = "Please answer the following questions "
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=loafing7; 2=loafing8] 
+</surveypage>
+
+<surveypage fbimpuls35>
+/ caption = "Please answer the following questions "
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=loafing9; 2=loafing10] 
+</surveypage>
+
+<surveypage fbimpuls36>
+/ caption = "Please answer the following questions "
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=loafing11; 2=loafing12] 
+</surveypage>
+
+<surveypage fbimpuls37>
+/ caption = "Please answer the following questions "
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=loafing13; 2=loafing14] 
+</surveypage>
+
+<surveypage fbimpuls38>
+/ caption = "Please answer the following questions using the scale provided, please indicate how much each of the following statements reflects how you typically are."
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=procastination1; 2=procastination2] 
+</surveypage>
+
+<surveypage fbimpuls39>
+/ caption = "Please answer the following questions using the scale provided, please indicate how much each of the following statements reflects how you typically are."
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=procastination3; 2=procastination4] 
+</surveypage>
+
+<surveypage fbimpuls40>
+/ caption = "Please answer the following questions using the scale provided, please indicate how much each of the following statements reflects how you typically are."
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=procastination5; 2=procastination6] 
+</surveypage>
+
+<surveypage fbimpuls41>
+/ caption = "Please answer the following questions using the scale provided, please indicate how much each of the following statements reflects how you typically are."
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=procastination7; 2=procastination8] 
+</surveypage>
+
+<surveypage fbimpuls42>
+/ caption = "Please answer the following questions using the scale provided, please indicate how much each of the following statements reflects how you typically are."
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=procastination9; 2=procastination10] 
+</surveypage>
+
+
+<surveypage fbimpuls43>
+/ caption = "Please answer the following questions using the scale provided, please indicate how much each of the following statements reflects how you typically are."
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=procastination11; 2=procastination12] 
+</surveypage>
+
+<surveypage fbimpuls44>
+/ caption = "Please answer the following questions using the scale provided, please indicate how much each of the following statements reflects how you typically are."
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=procastination13] 
+</surveypage>
+
+
+<surveypage fbimpuls45>
+/ caption = "Please answer the following questions using the scale provided, please indicate how much each of the following statements reflects how you typically are."
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=selfcontrol1; 2=selfcontrol2] 
+</surveypage>
+
+<surveypage fbimpuls46>
+/ caption = "Please answer the following questions using the scale provided, please indicate how much each of the following statements reflects how you typically are."
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=selfcontrol3; 2=selfcontrol4] 
+</surveypage>
+
+<surveypage fbimpuls47>
+/ caption = "Please answer the following questions using the scale provided, please indicate how much each of the following statements reflects how you typically are."
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=selfcontrol5; 2=selfcontrol6] 
+</surveypage>
+
+<surveypage fbimpuls48>
+/ caption = "Please answer the following questions using the scale provided, please indicate how much each of the following statements reflects how you typically are."
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=selfcontrol7; 2=selfcontrol8] 
+</surveypage>
+
+<surveypage fbimpuls49>
+/ caption = "Please answer the following questions using the scale provided, please indicate how much each of the following statements reflects how you typically are."
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=selfcontrol9; 2=selfcontrol10;] 
+</surveypage>
+
+<surveypage fbimpuls50>
+/ caption = "Please answer the following questions using the scale provided, please indicate how much each of the following statements reflects how you typically are."
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=selfcontrol11; 2=selfcontrol12] 
+</surveypage>
+
+<surveypage fbimpuls51>
+/ caption = "Please answer the following questions using the scale provided, please indicate how much each of the following statements reflects how you typically are."
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=selfcontrol13] 
+</surveypage>
+
+<surveypage fbimpuls52>
+/ caption = "Please answer the following questions;
+
+on average, how often do you engage in the following activities (with your phone, computer, tablet or other device)?"
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=generaluse1; 2=generaluse2] 
+</surveypage>
+
+<surveypage fbimpuls53>
+/ caption = "Please answer the following questions;
+
+on average, how often do you engage in the following activities (with your phone, computer, tablet or other device)?"
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=generaluse3; 2=generaluse4] 
+</surveypage>
+
+<surveypage fbimpuls54>
+/ caption = "Please answer the following questions;
+
+on average, how often do you engage in the following activities (with your phone, computer, tablet or other device)?"
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=generaluse5; 2=generaluse6] 
+</surveypage>
+
+<surveypage fbimpuls55>
+/ caption = "Please answer the following questions;
+
+on average, how often do you engage in the following activities (with your phone, computer, tablet or other device)?"
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=generaluse7] 
+</surveypage>
+
+<surveypage fbimpuls56>
+/ caption = "Please answer the following questions"
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=chinese; 2=sex; 3=age; 4=language] 
+</surveypage>
+
+<surveypage fbimpuls57>
+/ caption = "Please answer the following questions"
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=ethnicity; 2=education] 
+</surveypage>
+
+<surveypage fbimpuls58>
+/ caption = "Please answer the following question"
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=status; 2=environment] 
+</surveypage>
+
+<surveypage fbimpuls59>
+/ caption = "You are now done with the research project! For more information, please contact Guido van Koningsbruggen at g.m.van.koningsbruggen@vu.nl
+
+Thank you for your participation!
+
+On the next screen you will see an automatically generated SURVEY CODE. Please write down this code so you are able to type this code into the box in MTurk to receive your credits.
+
+Please click on the NEXT button to receive your personal SURVEY CODE."
+</surveypage>
+
+<surveypage codescherm>
+/ caption = "First read (!) and then complete the following steps in order to receive credit for participating in our project.
+
+1) Write down your personal SURVEY CODE (see below)
+2) Click on the FINISH button to save the data
+3) Please type your SURVEY CODE into the box in MTurk. Based on this code and the saved data you will receive your credits
+
+Thanks again for your participation!
+
+Your personal SURVEY CODE is: <% script.subjectid %>
+
+After writing down your code, please click FINISH to save the data."
+</surveypage>
+
+
+
+<surveypage fbimpuls60>
+/ caption = "You will now continue with the next study parts.
+
+We would like you to complete several different questionnaires. This task will take several minutes to complete.
+
+Please press the NEXT button to continue"
+</surveypage>
+
+
+<surveypage fbimpuls61>
+/ caption = "Your answers will be completely anonymous, and your responses cannot be traced back to you. Remember, there are no correct answers; please respond with your own opinion!
+
+Perhaps some of the questions do not fully apply to you or your situation. However, please select the answer option that best reflects your opinion.
+
+Please press the NEXT button to start"
+</surveypage>
+
+
+*** controle vraag *****
+
+<textbox captcha>
+/ caption = "Math question 13 + 3 is:"
+</textbox>
+
+<surveypage controlevraag>
+/ caption = "This question is for testing whether you are a human visitor and to prevent automated spam submissions. Enter your answer below. Only participants entering the correct answer will be paid."
+/ fontstyle = ("Verdana", -16, true, false, false, false, 5, 0)
+/ questions = [1=captcha]
+</surveypage>
+
+
+<survey fbimpuls>
+/ pages = [1=fbimpuls60; 2=fbimpuls61; 3=fbimpuls1; 4=fbimpuls2; 5=fbimpuls3; 6=fbimpuls4; 7=fbimpuls5; 8=fbimpuls6; 9=fbimpuls7; 10=fbimpuls8; 11=fbimpuls9; 
+			12=fbimpuls10; 13=fbimpuls11; 14=fbimpuls12; 15=fbimpuls13; 16=fbimpuls14; 17=fbimpuls15; 18=fbimpuls16; 19=fbimpuls17; 20=fbimpuls18; 
+			21=fbimpuls19; 22=fbimpuls20; 23=fbimpuls21; 24=fbimpuls22; 25=fbimpuls23; 26=fbimpuls24; 27=fbimpuls25; 28=fbimpuls26; 29=fbimpuls27; 
+			30=fbimpuls28; 31=fbimpuls29; 32=fbimpuls30; 33=fbimpuls31; 34=fbimpuls32; 35=fbimpuls33; 36=fbimpuls34; 37=fbimpuls35; 38=fbimpuls36; 
+			39=fbimpuls37; 40=fbimpuls38; 41=fbimpuls39; 42=fbimpuls40; 43=fbimpuls41; 44=fbimpuls42; 45=fbimpuls43; 46=fbimpuls44; 47=fbimpuls45; 
+			48=fbimpuls46; 49=fbimpuls47; 50=fbimpuls48; 51=fbimpuls49; 52=fbimpuls50; 53=fbimpuls51; 54=fbimpuls52; 55=fbimpuls53; 56=fbimpuls54; 
+			57=fbimpuls55; 58=fbimpuls56; 59=fbimpuls57; 60=fbimpuls58; 61=controlevraag; 62=fbimpuls59; 63=codescherm]
+/ responsefontstyle = ("Verdana", -12, false, false, false, false, 5, 0)
+/ itemfontstyle = ("Verdana", -13, false, false, false, false, 5, 0)
+/ itemspacing = 2%
+/ showpagenumbers = false
+/ showquestionnumbers = false
+/ showbackbutton = false
+</survey>
