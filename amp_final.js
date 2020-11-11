@@ -1,7 +1,7 @@
 define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualtrics/qamp.js'], function(APIConstructor, ampExtension){
 
 	var API = new APIConstructor();
-	
+	var global = API.getGlobal();
 	
 	return ampExtension({
 		primeCats :  [
