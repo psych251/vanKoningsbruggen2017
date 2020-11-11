@@ -10,7 +10,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 				nameForLogging : 'Social media', //Will be used in the logging
 				//An array of all media objects for this category.
 				mediaArray : [
-				    {image : 'fb1.jpg'}, 
+				    	{image : 'fb1.jpg'}, 
 					{image : 'fb2.jpg'}, 
 					{image : 'fb3.jpg'}, 
 					{image : 'fb4.jpg'}, 
@@ -27,7 +27,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 				nameForLogging : 'Control', //Will be used in the logging
 				//An array of all media objects for this category.
 				mediaArray : [
-				    {image : 'control1.jpg'}, 
+				    	{image : 'control1.jpg'}, 
 					{image : 'control2.jpg'}, 
 					{image : 'control3.jpg'}, 
 					{image : 'control4.jpg'}, 
