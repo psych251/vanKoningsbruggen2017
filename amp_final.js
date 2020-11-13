@@ -52,14 +52,26 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 		base_url : {//Where are your images at?
 			image : 'https://psych251.github.io/vanKoningsbruggen2017/inquisit_stimuli_imagesonly/'
 		}
+		
+		   //The mask stimulus in the example block
+			exampleMaskStimulus : {
+				css : {color:'000000', 'font-size':'3em'}, 
+				media : {image:'Mask.jpg'}
+			}, 
+			//The mask stimulus 
+			maskStimulus : {
+				css : {color:'000000', 'font-size':'3em'}, 
+				media : {image:'Mask.jpg'}
+			}, 
+			
     
-    //The prime categories.
-			targetCats :  [
-				{
-					nameForLogging : 'chinese',  //Will be used in the logging
-					//An array of all media objects for this category. The default is pic1-pic200.jpg
-					mediaArray : [
-						{image : 'pic1.jpg'} 
+//     //The prime categories.
+// 			targetCats :  [
+// 				{
+// 					nameForLogging : 'chinese',  //Will be used in the logging
+// 					//An array of all media objects for this category. The default is pic1-pic200.jpg
+// 					mediaArray : [
+// 						{image : 'pic1.jpg'} 
 // 			    			{image : 'pic2.jpg'}, {image : 'pic3.jpg'}, {image : 'pic4.jpg'}, {image : 'pic5.jpg'}, {image : 'pic6.jpg'}, {image : 'pic7.jpg'}, {image : 'pic8.jpg'}, {image : 'pic9.jpg'}, 
 // 						{image : 'pic10.jpg'}, {image : 'pic11.jpg'}, {image : 'pic12.jpg'}, {image : 'pic13.jpg'}, {image : 'pic14.jpg'}, {image : 'pic15.jpg'}, {image : 'pic16.jpg'}, {image : 'pic17.jpg'}, {image : 'pic18.jpg'}, {image : 'pic19.jpg'}, 
 // 						{image : 'pic20.jpg'}, {image : 'pic21.jpg'}, {image : 'pic22.jpg'}, {image : 'pic23.jpg'}, {image : 'pic24.jpg'}, {image : 'pic25.jpg'}, {image : 'pic26.jpg'}, {image : 'pic27.jpg'}, {image : 'pic28.jpg'}, {image : 'pic29.jpg'}, 
@@ -73,22 +85,12 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 // 						{image : 'pic110.jpg'}, {image : 'pic111.jpg'}, {image : 'pic112.jpg'}, {image : 'pic113.jpg'}, {image : 'pic114.jpg'}, {image : 'pic115.jpg'}, {image : 'pic116.jpg'}, {image : 'pic117.jpg'}, {image : 'pic118.jpg'}, {image : 'pic119.jpg'}, 
 // 						{image : 'pic120.jpg'}, {image : 'pic121.jpg'}, {image : 'pic122.jpg'}, {image : 'pic123.jpg'}, {image : 'pic124.jpg'}, {image : 'pic125.jpg'}, {image : 'pic126.jpg'}, {image : 'pic127.jpg'}, {image : 'pic128.jpg'}, {image : 'pic129.jpg'}, 
 // 						{image : 'pic130.jpg'}
-					]
+// 					]
 					
-				}
-			],
+// 				}
+// 			],
 			
-    //The mask stimulus in the example block
-			exampleMaskStimulus : {
-				css : {color:'000000', 'font-size':'3em'}, 
-				media : {image:'Mask.jpg'}
-			}, 
-			//The mask stimulus 
-			maskStimulus : {
-				css : {color:'000000', 'font-size':'3em'}, 
-				media : {image:'Mask.jpg'}
-			}, 
-			
+ 
 			    
 	//Changing params to make task the same as original paper
 		
