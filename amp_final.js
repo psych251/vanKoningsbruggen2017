@@ -49,7 +49,24 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 			mediaArray : [{image : 'prac1.jpg'}, {image : 'prac2.jpg'}, {image : 'prac3.jpg'}, {image : 'prac4.jpg'}, {image : 'prac5.jpg'}]
 		},
 
-		    
+			    
+	//Changing params to make task the same as original paper
+
+		//Duration parameters (updated from MinnoJS script to match vanKoningsbruggen2017)
+		fixationDuration : -1, //It means that by default we do not use fixation.
+		primeDuration : 75, 
+		postPrimeDuration : 125, //Duration of blank screen between prime and target.
+		targetDuration : 100, //Duration of target presentation.
+		ITI : 250, //Duration between trials.
+		
+		//For the example block (often practice) (updated from MinnoJS script to match vanKoningsbruggen2017)
+		exampleBlock_fixationDuration : -1, 
+		exampleBlock_primeDuration : 75, 
+		exampleBlock_postPrimeDuration : 125, 
+		exampleBlock_targetDuration : 100, 
+    
+		
+		
     //The prime categories.
 			targetCats :  [
 				{
@@ -97,22 +114,6 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 		}
 		
 
-			    
-	//Changing params to make task the same as original paper
 
-
-// 		//Duration parameters (updated from MinnoJS script to match vanKoningsbruggen2017)
-// 		fixationDuration : -1, //It means that by default we do not use fixation.
-// 		primeDuration : 75, 
-// 		postPrimeDuration : 125, //Duration of blank screen between prime and target.
-// 		targetDuration : 100, //Duration of target presentation.
-// 		ITI : 250, //Duration between trials.
-		
-// 		//For the example block (often practice) (updated from MinnoJS script to match vanKoningsbruggen2017)
-// 		exampleBlock_fixationDuration : -1, 
-// 		exampleBlock_primeDuration : 75, 
-// 		exampleBlock_postPrimeDuration : 125, 
-// 		exampleBlock_targetDuration : 100, 
-    
 	});
 });
