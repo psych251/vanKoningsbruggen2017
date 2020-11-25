@@ -1,0 +1,625 @@
+---
+title: "Replication of 'Spontaneous Hedonic Reactions to Social Media Cues' by van Koningsbruggen, Eden, & Veling  (2017, Cyberpsychology, Behavior, & Social Networking)"
+author: "Angela Lee (angela8@stanford.edu)"
+
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:
+    toc: yes
+    toc_depth: 3
+    toc_float:
+      collapsed: false
+---
+
+<!-- Replication reports should all use this template to standardize reporting across projects.  These reports will be public supplementary materials that accompany the summary report(s) of the aggregate results. -->
+
+## Introduction
+
+Link to full repo: https://github.com/psych251/vanKoningsbruggen2017.git
+
+This project is a replication of  empirical research by van Koningsbruggen et al (2017). The original research was published in Cyberpsychology, Behavior, and Social Networking. 
+
+In the field of social media research, many have wondered about why it may be challenging to resist the pull of using social media - such as wanting to open a notification when we see it pop up on our screen. However, while it is well-documented that many may find it challenging to resist the desire to engage with social media when the opportunity is presented to us, much less is known about the psychological mechanisms that underlie this finding. 
+
+Van Koningsbruggen et al. explore one possible mechanism for this by examining whether people have strong, spontaneous hedonic reactions to social media cues by using an online implicit measure of affective reactions called the Affect Misattribution Procedure. More specifically, the particular result I am interested in replicating is their mediation finding, where they found a significant indirect effect of Facebook use (frequency) on Facebook cravings by hedonic reactions to Facebook (vs. control) cues. In other words, that more-frequent Facebook users would experience stronger and more positive hedonic reactions to social media cues presented in the AMP measure, that were partially mediated through self-reported craving of social media. Overall, their findings are interesting and relevant to the literature because they explore the role of affect and affective reactions in the context of social media use. 
+
+## Project Proposal 
+
+Justification: My current research program focuses on how beliefs and responses to social technologies such as social media are related to health and psychological well-being. Up until now, my work has focused on understanding the mindsets that people have about social media, such as whether they believe it is an enhancing and beneficial tool they can utilize effectively or whether they believe it is a harmful and influential addiction. Currently, I'm very interested in understanding how social media use interacts with emotional responses. I selected Study 2 from van Koningsbruggen et al. (2017) because it examines the emotional associations that frequent vs. infrequent Facebook users have about social media through an online paradigm that captures spontaneous affective responses. More specifically, the particular result I am interested is their mediation finding a significant indirect effect of Facebook use (frequency) on Facebook cravings by hedonic reactions to Facebook (vs. control) cues. As the next step in my own research program, I'm hoping to examine how people with different mindsets of social media use respond emotionally to social media cues. I believe that replicating this study will help me better develop the skills necessary to program such an online paradigm and advance my understanding of hedonic reactions to social media cues.
+
+Description: Study 2 recruited 170 participants from Amazon mTURK, who were paid $1 each for their time (128 in final analysis). Participants were required to have a 95% mTURK approval rating. Exclusion criteria were: (1) Participants must be Facebook users, (2) not be familiar with the Chinese or Japanese language (characters are used in the paradigm), and (3) sufficient engagement with the task (i.e., not 'straightlining' their AMP paradigm responses). 
+
+Participants were told they were going to complete a task "examining how people make judgements under distracting conditions." They were randomly assigned to seeing social media cues as primes (i.e., Facebook Logo, screenshot of timeline) or a control condition showing them photos of office supplies. This task was the "Affect Misattribution Procedure", an implicit measure of affective reactions. There are 60 trials (w/ 10 practice trials) of the AMP procedure, where participants (1) see a prime picture (social media cue or office supply) for 75 ms, (2) see a blank screen for 125 ms, (3) see a Chinese 'pictograph' character for 100 ms, and a (4) mask image. Participants respond whether each prime is more or less pleasant than the 'pictograph' character. The dependent variable of hedonic reaction consists of participants' average ratings of pleasantness of social media-related cues. Participants were also asked to complete a six-item measure of Facebook cravings (i.e., "I want to use Facebook right now."). 
+
+Potential challenges I anticipate with this study revolve around programming and questions of stimuli validity. Although I want to use this project as a learning opportunity on how to code online paradigms and use implicit measures paradigms, I have not done this before and anticipate possible programming challenges. In addition, I have some questions about the stimuli. They are available via supplemental materials provided by the original team, but I worry that the social-media cues (i.e., screenshot of Facebook timeline) may now be outdated and may influence participants' responses. Finally, I have some concerns that the use of Chinese 'pictograph' characters in the original AMP paradigm will result in a systematic exclusion of Asian or Asian American participants. I am not sure of the best way to proceed with this. 
+
+## Methods
+
+### Power Analysis
+
+Original effect size, power analysis for samples to achieve 80%, 90%, 95% power to detect that effect size.  Considerations of feasibility for selecting planned sample size.
+
+Following the project power guidance from PSYCH251's lecture, I wanted to try to find the key test and determine if we could compute ES. The primary test was a mixed model repeated measures ANOVA on hedonic reactions with cue type (FB vs. control) as the within subject factor and standardized Facebook use as the continuous predictor. According to the original study, "The main effects of cue type, F(1, 126) = 2.28, p = 0.134, and g2p = 0.018, or Facebook use, F(1, 126) = 0.26, p = 0.609, and g2p = 0.002, were not significant. However, the results again revealed a significant interaction effect between cue type and Facebook use, F(1, 126) = 8.91, p = 0.003, and g2p = 0.066 (Fig. 2B). Simple effects tests showed that frequent Facebook users had significantly more pleasant responses following Facebook cues (M = 0.64, SE = 0.03) than control cues (M=0.52, SE=0.03), Mdifference=0.12, SEdifference= 0.04, 95% CI = [0.05, 0.20], F(1, 126) = 10.70, p = 0.001, and g2p = 0.078." The partial-eta-squared was the effect size, which was 0.078. 
+
+Based on this, I used GPower of ANOVA repeated-measures with within-between interaction to calculate the necessary sample size. [*NOTE: I wasn't 100% sure if this was the right GPOWEr test to enter vs. a repeated measures ANOVA of within factors*] The number of groups was set to 2 (FB vs. control cues) and the number of measurements was 10 (for the # of trials). However,I did not know the correlation value between the repeated measures so I left it at 0.5, which was the default setting in GPOWER. According to this, I would need a sample size of 196 participants.
+
+### Planned Sample
+
+All participants will be recruited from Amazon mechanical Turk. The original study recruited 92 participants in Study 1 and 170 participants in Study 2. 
+
+The final sample size used in our replication will go here after we complete the power analysis. 
+
+Our pre-selection criteria will ask for mTurkers to have a (1) 95% mTurk approval rating, (2) be located in the United States, and (3) have successfully completed at least 50 mTurk tasks. After data collection but before data analysis, we will exclude participants based on the following a priori criteria from the original article: (1) If participants have already done a study using the Affective Misattribution Procedure,
+(2) If participants do not use Facebook,
+(3) If participants are familiar with / fluent in the Chinese or Japanese language, 
+(4) If participants respond to every target in the AMP with the same response key. 
+
+We will not target or limit our participant criteria according to any demographics. 
+
+### Materials
+
+The following was quoted from the original article and followed precisely. Exceptions are described below. 
+
+"For the AMP, we selected 10 Facebook-related (e.g., the Facebook logo, a timeline screenshot) and 10 control pic- tures of office supplies (e.g., a stapler and sticky tape) as primes, supplemented with a filler picture (10 times a grey square). The Chinese pictographs and mask picture were taken from the materials used by Payne et al." 
+
+These stimuli were pretested in the original article to confirm that participants would rate the Facebook-related and control cues as equally appealing. 
+
+The one difference we wanted to note here is that we changed two of the Facebook-related cues (#8 and #9). The reason for this is that one utilized an outdated image of the Facebook newsfeed and the other was in a non-English language. We wanted to change these stimuli to make it more aligned with the newest Facebook interface and fit to our English-speaking sample. 
+
+"Hedonic reactions. Following Payne et al.,14 on each trial of the AMP, a prime picture was presented (75 ms), followed by a blank screen (125 ms), a Chinese pictograph (100 ms), and finally a mask that remained until a response was made (Fig. 1). Participants were asked to judge whether each pictograph was more or less pleasant than the average pictograph using the ‘‘i’’ ( pleasant) and ‘‘e’’ (unpleasant) keys. The task consisted of 60 trials (preceded by 10 practice trials), presented in random order. Each prime picture was shown twice and was paired with a new pictograph each time." 
+
+![figure of hedonic reaction AMP task.](/Users/Angela/Desktop/vanKoningsbruggen2017/AMP.png)
+
+
+"Facebook cravings. In Study 2, Facebook cravings were measured using six items (a = 0.94) based on22: ‘‘I want to use Facebook right now,’’ ‘‘I would love if it was possible to use Facebook right now,’’ ‘‘I will use Facebook immediately after I finished this survey,’’ ‘‘I strongly desire to use Facebook right now,’’ ‘‘I don’t need Facebook at the moment’’ (reverse scored), and ‘‘Right now, I am craving to use Facebook.’’ Responses were given on a 5-point scale (1 = strongly disagree, 2 = disagree, 3 = neutral, 4 = agree, and 5 = strongly agree)."
+
+"Facebook use. Facebook use was assessed with items measuring the duration and frequency of use and were adapted from Ross et al.,23 and supplemented with an additional item (‘‘How often do you check your Facebook account?’’)."
+
+### Procedure	
+
+We will replicate the methods of the original study as closely as possible. We will recruit participants from Amazon mechanical Turk; We will consult the original authors for the name they gave to their HIT and use the same. 
+
+"Facebook users’ spontaneous hedonic reactions were assessed using the AMP with cue type (Facebook vs. control) as within-subjects factor and Facebook use as continuous predictor. MTurk participants (N= 92 and 170 in Studies 1 and 2, respectively) from the United States who had at least a 95% MTurk approval rating and successfully completed 50 MTurk tasks before completed the online study (programmed in Inquisit 4) and were paid $1. Based on a priori criteria and before any data analyses, participants were excluded if they already participated in a study using the same AMP (n = 5 and 13 in Studies 1 and 2, respectively), did not use Facebook (n = 11 and 18 in Studies 1 and 2, respectively), were familiar with the Chinese or Japanese language (which may influence their AMP responses,14 n = 5 in both studies), or responded to every target in the AMP with the same response key14 (n = 1 and 11 in Studies 1 and 2, respectively). Thus, analyses were conducted on 72 and 128 participants in Studies 1 and 2, respectively (some participants met multiple exclusion criteria). Participants first completed the AMP (presented as a task examining how people make judgments under distracting conditions), followed by a questionnaire that included the Facebook cravings (in Study 2 only) and Facebook use measures. After answering some background and demographic questions (see Table 1 for the samples’ characteristics), they were thanked for their participation." 
+
+### Analysis Plan
+
+Can also quote directly, though it is less often spelled out effectively for an analysis strategy section.  The key is to report an analysis strategy that is as close to the original - data cleaning rules, data exclusion rules, covariates, etc. - as possible.  
+
+Participants were excluded according the a priori criteria specified. 
+
+Data cleaning will proceed as follows. Notes where I am uncertain and would like to clarify in author contact email are marked with a *. 
+Hedonic reactions will be calculated for each participant through the AMP data*. The original paper notes that they examine the "mean proportion of pleasant responses to Facebook cues" and the "mean proportion of pleasant responses to control cues." My working plan at the moment to get this number is by (1) extracting and downloading participant response data from Inquisit & Qualtrics, (2) for each participant, identify their responses to the Facebook cues vs.the Control cues, (3) label a "pleasant" response (i-key) to each cue as a 1 and an "un-pleasant" response (e-key) as a 0, (4) for each participant, take the mean of their responses to Facebook-related cues and take the mean of their responses to Control cues. 
+
+The continuous variable of "Facebook use" will be standardized due to differing scale ranges. We will compute the median and mean* of "Facebook duration" and frequency. 
+
+I am a little confused about the right way to take the mean of non-interval ordinal data for "Facebook duration" and "frequency of Facebook use." The original study notes that the response categories were e.g. (1 = 10 minutes, 2 = 10-30 mins, 3 = 31-60 mins, 4 = 1-2 hours). However, I'm unsure about how to interpret the mean in this case. The table 2 summary also reports the median response of duration and frequency. 
+
+Once data is cleaned, we will follow the analyses in the original Study 2: 
+(1) Run bivariate correlations between mean proportion of pleasant responses to FB cues, mean proportion of pleasant responses to control cues, Facebook use, and Facebook cravings. 
+(2) Run a mixed-model repeated-measures ANOVA on hedonic reactions with cue type as the within subjects factor (prop. of pleasant responses to FB cues, prop. of pleasant response to control cues) on standardized Facebook use as a continuous predictor. 
+(3) Use simple effects tests to see if frequent Facebook useres have more pleasant responses following FB cues than following control cues. 
+(4) Run a mediation model using PROCESS macro Model 4 in SPSS. AMP responses were scored as a difference score by subtracting proportion of pleasant responses to control cues from proportion of pleasant responses to FB cues (higher scores mean more positive responses to FB cues relative to control cues). Facebook use will be entered as the predictor, AMP difference score as indirect mediation, and Facebook cravings will be the dependent variable. 
+
+**Clarify key analysis of interest here**  The fourth analysis is the key analysis of interest.
+
+### Differences from Original Study
+
+Explicitly describe known differences in sample, setting, procedure, and analysis plan from original study.  The goal, of course, is to minimize those differences, but differences will inevitably occur.  Also, note whether such differences are anticipated to make a difference based on claims in the original article or subsequent published research on the conditions for obtaining the effect.
+
+There are several differences in our replication from the original paper. First, we have slightly modified the stimuli from the AMP paradigm to be more reflective of our participants' language and the updated FB interface. We do not expect this to make any difference in the findings. 
+
+### Methods Addendum (Post Data Collection)
+
+You can comment this section out prior to final report with data collection.
+
+#### Actual Sample
+  Sample size, demographics, data exclusions based on rules spelled out in analysis plan
+
+#### Differences from pre-data collection methods plan
+  Any differences from what was described as the original plan, or “none”.
+
+## Results
+
+### Data preparation
+
+## Pilot A 
+
+	
+```{r eval=TRUE}
+###Data Preparation
+
+####Load Relevant Libraries and Functions
+
+library(tidyverse)
+library(readr)
+library(knitr)
+library(ggplot2)
+
+####Import data
+
+#read in data
+setwd("/Users/Angela/Desktop/vanKoningsbruggen2017")
+df.pilota = read.csv('PSYCH251 Pilot A_WithAMPText.csv', header = TRUE)
+
+#### Data exclusion / filtering
+
+df.data_exc <- df.pilota %>% 
+  # filter(Q13 == "No") %>% #exclude participants familiar with chinese/japanese lang (NOT DOING THIS FOR PILOT A because one of two participants spoke chinese)
+  filter(Q12 == "Yes")   #exclude participants who don't have FB
+
+
+#### Prepare data for analysis - create columns etc.
+# This is translated for R from the OSF SPSS syntax from the original study [https://osf.io/9gue3/]
+  
+df.data_clean <- df.data_exc %>% 
+  rename(chinese_lang = Q12,
+         fb_use_screen = Q13,
+         amp_fulltext = Q25,
+         fb_use_dur = Q3,
+         fb_use1 = Q6,
+         fb_use2 = Q7, 
+         fb_use3 = Q8,
+         fb_use4 = Q9, 
+         fb_use5 = Q10,
+         fb_use6 = Q11, 
+         craving1 = Q15,
+         craving2 = Q19, 
+         craving3 = Q20, 
+         craving4 = Q21,
+         craving5 = Q17,
+         craving6 = Q18, 
+         age = Q22,
+         gender = Q23) %>% 
+  mutate(fb_use_dur = recode(fb_use_dur, 
+                            `10 minutes or less` = 1,
+                            `10-30 minutes` = 2,
+                            `31-60 minutes` = 3,
+                            `1-2 hours` = 4,
+                            `2-3 hours` = 5,
+                            `3+ hours` = 6)) %>% 
+  mutate(fb_use1 = recode(fb_use1, 
+                            `Less than once a year` = 1,
+                            `A few times a year` = 2,
+                            `Less than once monthly` = 3,
+                            `Once monthly` = 4,
+                            `Twice monthly` = 5,
+                            `Once weekly` = 6,
+                            `2 or more times weekly` = 7,
+                            `Once daily` = 8,
+                            `Twice daily` = 9,
+                            `3-4 times daily` = 10,
+                            `More than 4 times daily` = 11)) %>% 
+  mutate(fb_use2 = recode(fb_use2, 
+                            `Less than once a year` = 1,
+                            `A few times a year` = 2,
+                            `Less than once monthly` = 3,
+                            `Once monthly` = 4,
+                            `Twice monthly` = 5,
+                            `Once weekly` = 6,
+                            `2 or more times weekly` = 7,
+                            `Once daily` = 8,
+                            `Twice daily` = 9,
+                            `3-4 times daily` = 10,
+                            `More than 4 times daily` = 11)) %>% 
+  mutate(fb_use3 = recode(fb_use3, 
+                            `Less than once a year` = 1,
+                            `A few times a year` = 2,
+                            `Less than once monthly` = 3,
+                            `Once monthly` = 4,
+                            `Twice monthly` = 5,
+                            `Once weekly` = 6,
+                            `2 or more times weekly` = 7,
+                            `Once daily` = 8,
+                            `Twice daily` = 9,
+                            `3-4 times daily` = 10,
+                            `More than 4 times daily` = 11)) %>% 
+  mutate(fb_use4 = recode(fb_use4, 
+                            `Less than once a year` = 1,
+                            `A few times a year` = 2,
+                            `Less than once monthly` = 3,
+                            `Once monthly` = 4,
+                            `Twice monthly` = 5,
+                            `Once weekly` = 6,
+                            `2 or more times weekly` = 7,
+                            `Once daily` = 8,
+                            `Twice daily` = 9,
+                            `3-4 times daily` = 10,
+                            `More than 4 times daily` = 11)) %>% 
+  mutate(fb_use5 = recode(fb_use5, 
+                            `Less than once a year` = 1,
+                            `A few times a year` = 2,
+                            `Less than once monthly` = 3,
+                            `Once monthly` = 4,
+                            `Twice monthly` = 5,
+                            `Once weekly` = 6,
+                            `2 or more times weekly` = 7,
+                            `Once daily` = 8,
+                            `Twice daily` = 9,
+                            `3-4 times daily` = 10,
+                            `More than 4 times daily` = 11)) %>% 
+  mutate(fb_use6 = recode(fb_use6, 
+                            `Less than once a year` = 1,
+                            `A few times a year` = 2,
+                            `Less than once monthly` = 3,
+                            `Once monthly` = 4,
+                            `Twice monthly` = 5,
+                            `Once weekly` = 6,
+                            `2 or more times weekly` = 7,
+                            `Once daily` = 8,
+                            `Twice daily` = 9,
+                            `3-4 times daily` = 10,
+                            `More than 4 times daily` = 11)) %>% 
+   mutate(craving1= recode(craving1, 
+                            `Strongly disagree` = 1,
+                            `Disagree` = 2,
+                            `Neutral` = 3,
+                            `Agree` = 4,
+                            `Strongly agree` = 5)) %>% 
+  mutate(craving2= recode(craving2, 
+                            `Strongly disagree` = 1,
+                            `Disagree` = 2,
+                            `Neutral` = 3,
+                            `Agree` = 4,
+                            `Strongly agree` = 5)) %>% 
+  mutate(craving3= recode(craving3, 
+                            `Strongly disagree` = 1,
+                            `Disagree` = 2,
+                            `Neutral` = 3,
+                            `Agree` = 4,
+                            `Strongly agree` = 5)) %>% 
+  mutate(craving4= recode(craving4, 
+                            `Strongly disagree` = 1,
+                            `Disagree` = 2,
+                            `Neutral` = 3,
+                            `Agree` = 4,
+                            `Strongly agree` = 5)) %>% 
+  mutate(craving5= recode(craving5, 
+                            `Strongly disagree` = 1,
+                            `Disagree` = 2,
+                            `Neutral` = 3,
+                            `Agree` = 4,
+                            `Strongly agree` = 5)) %>% 
+  mutate(craving6= recode(craving6, 
+                            `Strongly disagree` = 1,
+                            `Disagree` = 2,
+                            `Neutral` = 3,
+                            `Agree` = 4,
+                            `Strongly agree` = 5)) %>% 
+  rowwise() %>% 
+
+  #compute composite vars 
+  mutate(fb_use_mean = mean(fb_use1, fb_use2, fb_use3, fb_use4, fb_use5, fb_use6)) %>%  #compute mean of all gen media use 
+   mutate(cravings_mean = mean(craving1, craving2, craving3, craving4, craving5, craving6)) %>% 
+  mutate(propFB = amp_sm_pleas / 30) %>% 
+  mutate(propCon = amp_c_pleas / 30) %>%  
+
+  #standardize fb_duration
+  mutate(zscore = (fb_use_dur - mean(fb_use_dur))/sd(fb_use_dur)) %>% 
+
+  #compute AMP diff score for med. analysis 
+  mutate(amp_diff = propFB - propCon)
+
+df.data_clean
+
+```
+
+## Pilot B
+
+> Pilot B was a sample of 4 participants recruited from mTurk. 
+
+	
+```{r eval=TRUE}
+###Data Preparation
+
+####Load Relevant Libraries and Functions
+
+library(tidyverse)
+library(readr)
+library(knitr)
+library(ggplot2)
+
+####Import data
+
+#read in data
+setwd("/Users/Angela/Desktop/vanKoningsbruggen2017")
+df.pilotb = read.csv('PSYCH251 - SM AMP_PilotB_IdentDataRemoved.csv', header = TRUE)
+
+#### Data exclusion / filtering
+
+df.datab_exc <- df.pilotb %>% 
+   filter(Q13 == "No") %>% #exclude participants familiar with chinese/japanese lang (NOT DOING THIS FOR PILOT A because one of two participants spoke chinese)
+  filter(Q12 == "Yes")   #exclude participants who don't have FB
+
+
+#### Prepare data for analysis - create columns etc.
+# This is translated for R from the OSF SPSS syntax from the original study [https://osf.io/9gue3/]
+  
+df.datab_clean <- df.datab_exc %>% 
+  rename(chinese_lang = Q12,
+         fb_use_screen = Q13,
+         amp_fulltext = Q25,
+         fb_use_dur = Q3,
+         fb_use1 = Q6,
+         fb_use2 = Q7, 
+         fb_use3 = Q8,
+         fb_use4 = Q9, 
+         fb_use5 = Q10,
+         fb_use6 = Q11, 
+         craving1 = Q15,
+         craving2 = Q19, 
+         craving3 = Q20, 
+         craving4 = Q21,
+         craving5 = Q17,
+         craving6 = Q18, 
+         age = Q22,
+         gender = Q23) %>% 
+  mutate(fb_use_dur = recode(fb_use_dur, 
+                            `10 minutes or less` = 1,
+                            `10-30 minutes` = 2,
+                            `31-60 minutes` = 3,
+                            `1-2 hours` = 4,
+                            `2-3 hours` = 5,
+                            `3+ hours` = 6)) %>% 
+  mutate(fb_use1 = recode(fb_use1, 
+                            `Less than once a year` = 1,
+                            `A few times a year` = 2,
+                            `Less than once monthly` = 3,
+                            `Once monthly` = 4,
+                            `Twice monthly` = 5,
+                            `Once weekly` = 6,
+                            `2 or more times weekly` = 7,
+                            `Once daily` = 8,
+                            `Twice daily` = 9,
+                            `3-4 times daily` = 10,
+                            `More than 4 times daily` = 11)) %>% 
+  mutate(fb_use2 = recode(fb_use2, 
+                            `Less than once a year` = 1,
+                            `A few times a year` = 2,
+                            `Less than once monthly` = 3,
+                            `Once monthly` = 4,
+                            `Twice monthly` = 5,
+                            `Once weekly` = 6,
+                            `2 or more times weekly` = 7,
+                            `Once daily` = 8,
+                            `Twice daily` = 9,
+                            `3-4 times daily` = 10,
+                            `More than 4 times daily` = 11)) %>% 
+  mutate(fb_use3 = recode(fb_use3, 
+                            `Less than once a year` = 1,
+                            `A few times a year` = 2,
+                            `Less than once monthly` = 3,
+                            `Once monthly` = 4,
+                            `Twice monthly` = 5,
+                            `Once weekly` = 6,
+                            `2 or more times weekly` = 7,
+                            `Once daily` = 8,
+                            `Twice daily` = 9,
+                            `3-4 times daily` = 10,
+                            `More than 4 times daily` = 11)) %>% 
+  mutate(fb_use4 = recode(fb_use4, 
+                            `Less than once a year` = 1,
+                            `A few times a year` = 2,
+                            `Less than once monthly` = 3,
+                            `Once monthly` = 4,
+                            `Twice monthly` = 5,
+                            `Once weekly` = 6,
+                            `2 or more times weekly` = 7,
+                            `Once daily` = 8,
+                            `Twice daily` = 9,
+                            `3-4 times daily` = 10,
+                            `More than 4 times daily` = 11)) %>% 
+  mutate(fb_use5 = recode(fb_use5, 
+                            `Less than once a year` = 1,
+                            `A few times a year` = 2,
+                            `Less than once monthly` = 3,
+                            `Once monthly` = 4,
+                            `Twice monthly` = 5,
+                            `Once weekly` = 6,
+                            `2 or more times weekly` = 7,
+                            `Once daily` = 8,
+                            `Twice daily` = 9,
+                            `3-4 times daily` = 10,
+                            `More than 4 times daily` = 11)) %>% 
+  mutate(fb_use6 = recode(fb_use6, 
+                            `Less than once a year` = 1,
+                            `A few times a year` = 2,
+                            `Less than once monthly` = 3,
+                            `Once monthly` = 4,
+                            `Twice monthly` = 5,
+                            `Once weekly` = 6,
+                            `2 or more times weekly` = 7,
+                            `Once daily` = 8,
+                            `Twice daily` = 9,
+                            `3-4 times daily` = 10,
+                            `More than 4 times daily` = 11)) %>% 
+   mutate(craving1= recode(craving1, 
+                            `Strongly disagree` = 1,
+                            `Disagree` = 2,
+                            `Neutral` = 3,
+                            `Agree` = 4,
+                            `Strongly agree` = 5)) %>% 
+  mutate(craving2= recode(craving2, 
+                            `Strongly disagree` = 1,
+                            `Disagree` = 2,
+                            `Neutral` = 3,
+                            `Agree` = 4,
+                            `Strongly agree` = 5)) %>% 
+  mutate(craving3= recode(craving3, 
+                            `Strongly disagree` = 1,
+                            `Disagree` = 2,
+                            `Neutral` = 3,
+                            `Agree` = 4,
+                            `Strongly agree` = 5)) %>% 
+  mutate(craving4= recode(craving4, 
+                            `Strongly disagree` = 1,
+                            `Disagree` = 2,
+                            `Neutral` = 3,
+                            `Agree` = 4,
+                            `Strongly agree` = 5)) %>% 
+  mutate(craving5= recode(craving5, 
+                            `Strongly disagree` = 1,
+                            `Disagree` = 2,
+                            `Neutral` = 3,
+                            `Agree` = 4,
+                            `Strongly agree` = 5)) %>% 
+  mutate(craving6= recode(craving6, 
+                            `Strongly disagree` = 1,
+                            `Disagree` = 2,
+                            `Neutral` = 3,
+                            `Agree` = 4,
+                            `Strongly agree` = 5)) %>% 
+  rowwise() %>% 
+
+  #compute composite vars 
+  mutate(fb_use_mean = mean(fb_use1, fb_use2, fb_use3, fb_use4, fb_use5, fb_use6)) %>%  #compute mean of all gen media use 
+   mutate(cravings_mean = mean(craving1, craving2, craving3, craving4, craving5, craving6)) %>% 
+  mutate(propFB = amp_sm_pleasant / 30) %>% 
+  mutate(propCon = amp_c_pleasant / 30) %>%  
+  
+  #compute AMP diff score for med. analysis 
+  mutate(amp_diff = propFB - propCon)
+  
+  #standardize fb_use
+  df.datab_clean$ztest_fb_use1 <- ((df.datab_clean$fb_use1 - mean(df.datab_clean$fb_use1)) / sd(df.datab_clean$fb_use1))
+  df.datab_clean$ztest_fb_use2 <- ((df.datab_clean$fb_use2 - mean(df.datab_clean$fb_use2)) / sd(df.datab_clean$fb_use2))
+   df.datab_clean$ztest_fb_use3 <- ((df.datab_clean$fb_use3 - mean(df.datab_clean$fb_use3)) / sd(df.datab_clean$fb_use3))
+   df.datab_clean$ztest_fb_use4 <- ((df.datab_clean$fb_use4 - mean(df.datab_clean$fb_use4)) / sd(df.datab_clean$fb_use4))
+   df.datab_clean$ztest_fb_use5 <- ((df.datab_clean$fb_use5 - mean(df.datab_clean$fb_use5)) / sd(df.datab_clean$fb_use2))
+   df.datab_clean$ztest_fb_use6 <- ((df.datab_clean$fb_use6 - mean(df.datab_clean$fb_use6)) / sd(df.datab_clean$fb_use6))
+
+   #mean of standardized fb 
+   df.datab_clean <- df.datab_clean %>% 
+    mutate(zfb_use_mean = mean(c(ztest_fb_use1,ztest_fb_use2,ztest_fb_use3,ztest_fb_use4,ztest_fb_use5,ztest_fb_use6)))
+
+df.datab_clean
+
+### Confirmatory analysis
+
+# Fig 2 reproduced 
+
+#plot
+#using original data NOT the model predictions they used in their fig 2
+
+df.datab_clean$ID <- seq.int(nrow(df.datab_clean)) # add ID column
+df.datab_tidy <- df.datab_clean %>% #make tidy 
+  select(ID, propCon, propFB, zfb_use_mean, gender) %>% 
+  pivot_longer(cols = -c(ID, zfb_use_mean, gender),
+               names_to = "cue_type",
+               values_to = "cue_prop")
+library(ggplot2)
+
+plot2 <- ggplot(data = df.datab_tidy,
+                mapping = aes(x = zfb_use_mean, 
+                              y = cue_prop,
+                              color = cue_type)) + 
+        geom_point() + 
+        coord_cartesian(xlim = c(-2, 2), ylim = c(0,1)) + 
+        xlab("Facebook use (Standardized)") + 
+        ylab("Proportion Pleasant Responses") +
+        scale_fill_discrete(name = "Cue Type", labels = c("Control", "Social Media") ) + 
+        geom_smooth(method = "lm") + 
+        theme_classic() 
+```
+
+plot2
+
+```{r echo=FALSE}
+plot2
+```
+
+![figure of hedonic reaction AMP task.](/Users/Angela/Desktop/vanKoningsbruggen2017/fig2.png)
+
+
+#The analyses as specified in the analysis plan.  
+
+```{r eval = FALSE}
+#1) Bivariate correlations between mean proportion of pleasant responses to FB cues, mean proportion of pleasant responses to control cues, Facebook use, and Facebook cravings
+
+library(tidyverse)
+df.datab_corr <- df.datab_clean %>% 
+  select(zfb_use_mean, propFB, propCon, cravings_mean) 
+
+corrtable <- cor(df.datab_corr)
+round(corrtable, 2)
+
+#2) Mixed-model repeated-measures ANOVA on hedonic reactions with cue type as the within subjects factor (prop. of pleasant responses to FB cues, prop. of pleasant response to control cues) on standardized Facebook use as a continuous predictor. 
+
+plot1 <- ggplot(data = df.datab_clean,
+                mapping = aes(x = zfb_use_mean, 
+                              y = propFB)) + 
+        geom_point() + 
+        coord_cartesian(xlim = c(-2, 2), ylim = c(0,1))
+  
+df.datab_clean$ID <- seq.int(nrow(df.datab_clean)) # add ID column
+df.datab_tidy <- df.datab_clean %>% #make tidy 
+  select(ID, propCon, propFB, zfb_use_mean, gender) %>% 
+  pivot_longer(cols = -c(ID, zfb_use_mean, gender),
+               names_to = "cue_type",
+               values_to = "cue_prop")
+
+library(lme4) 
+
+model1 <- lmer(data = df.datab_tidy,
+               cue_prop ~ cue_type*zfb_use_mean + (1| ID))
+
+summary(model1)
+
+#Role of gender? 
+
+model2 <- lmer(data = df.datab_tidy,
+               cue_prop ~ cue_type*zfb_use_mean*gender + (1| ID))
+
+anova(model1, model2)
+
+# Found a significant gender effect 
+
+#3) Simple effects tests to see if frequent Facebook users have more pleasant responses following FB cues than following control cues. 
+###? Not sure about this part. 
+
+#install.packages("phia")
+#library(phia)
+
+#testInteractions(model2.anova, 
+#                 fixed= "df.datab_tidy$cue_type", 
+#                 data = df.datab_tidy)
+
+#4) Mediation model using PROCESS macro Model 4 in SPSS. AMP responses were scored as a difference score by subtracting proportion of pleasant responses to control cues from proportion of pleasant responses to FB cues (higher scores mean more positive responses to FB cues relative to control cues). Facebook use will be entered as the predictor, AMP difference score as indirect mediation, and Facebook cravings will be the dependent variable.
+
+library(mediation)
+
+#total effect
+fit.totaleffect = lm(cravings_mean ~ zfb_use_mean, df.datab_clean) 
+summary(fit.totaleffect)
+
+#IV on mediator 
+fit.mediator = lm(amp_diff ~ zfb_use_mean, df.datab_clean) 
+summary(fit.mediator)
+
+#mediator on DV 
+fit.dv = lm(cravings_mean ~ zfb_use_mean + amp_diff, df.datab_clean) 
+summary(fit.dv)
+
+#results = mediate(fit.mediator, fit.dv, 
+#                  treat ="zfb_use_mean",
+#                  mediator = "amp_diff", 
+#                  boot = T)
+#summary(results)
+
+# Could not test mediation because of insufficient power; gave an "essentially perfect fit" warning.  
+```
+
+*Side-by-side graph with original graph is ideal here*
+
+### Exploratory analyses
+
+Any follow-up analyses desired (not required).  
+
+## Discussion
+
+### Summary of Replication Attempt
+
+Open the discussion section with a paragraph summarizing the primary result from the confirmatory analysis and the assessment of whether it replicated, partially replicated, or failed to replicate the original result.  
+
+### Commentary
+
+Add open-ended commentary (if any) reflecting (a) insights from follow-up exploratory analysis, (b) assessment of the meaning of the replication (or not) - e.g., for a failure to replicate, are the differences between original and present study ones that definitely, plausibly, or are unlikely to have been moderators of the result, and (c) discussion of any objections or challenges raised by the current and original authors about the replication attempt.  None of these need to be long.
